@@ -6,6 +6,7 @@ export const WrapperFooter = styled.footer`
     color: #fff;
     display: flex;
     font-size: 14px;
+    height: 20vh;
     justify-content: space-between;
     padding: 4vh 8vh;
 `;
