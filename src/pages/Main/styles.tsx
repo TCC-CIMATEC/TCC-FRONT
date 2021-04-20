@@ -17,7 +17,11 @@ export const Banner = styled.div`
 export const BannerContent = styled.div`
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding: 5rem 0 0;
+    h1{
+        text-transform: uppercase;
+    }
 `;
 
 export const BannerImage = styled.div`

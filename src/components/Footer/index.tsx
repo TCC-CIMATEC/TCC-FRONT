@@ -4,7 +4,8 @@ function Footer() {
     return (
         <WrapperFooter>
             <About>
-                <li><a href="#">Sobre o projeto</a></li>
+                <li><a href="/">Home</a></li>
+                <li><a href="/sobre">Sobre o projeto</a></li>
                 <li><a href="#">Contato</a></li>
             </About>
             <Tcc>
