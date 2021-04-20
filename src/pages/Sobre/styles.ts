@@ -8,7 +8,6 @@ export const Wrapper = styled.div`
     justify-content: center;
     padding: 8vh 15vh;
     position: relative;
-    width: 90%;
     img{
         height: 100%;
     }

@@ -6,7 +6,7 @@ function Footer() {
             <About>
                 <li><a href="/">Home</a></li>
                 <li><a href="/sobre">Sobre o projeto</a></li>
-                <li><a href="#">Contato</a></li>
+                <li><a href="/fale-conosco">Contato</a></li>
             </About>
             <Tcc>
                 <p>Trabalho de Conclusão de Curso - SENAI Cimatec</p>
