@@ -2,21 +2,36 @@ import styled from 'styled-components';
 
 interface ContainerProps {
   background: string;
+  backgroundHover: string;
 }
 
-export const Container = styled.button<ContainerProps>`
+export const ContainerButton = styled.button<ContainerProps>`
+  padding: 0 3vh;
   position: relative;
+  height: 6vh;
   width: 20%;
-  height: 4rem;
-  margin: 5rem 0 2.2rem;
   color: rgba(255,255,255,0.8);
-  background: ${({background}) => background};
+  background-color: ${({ background }) => background};
   font-size: 1.5rem;
   border-radius: 3rem;
   border: none;
+  transition: 0.3s;
+  &:hover{
+    background-color: ${({ backgroundHover }) => backgroundHover};
+  }
 `;
 
 export const Title = styled.p`
   font-size: 14px;
   color: white;
+  line-height: 100%;
+  margin: 0;
+`;
+
+export const LinkClose = styled.a`
+    cursor: pointer;
+    height: 5vh;
+    position: absolute;
+    right: 4vh;
+    top: 4vh;
 `;

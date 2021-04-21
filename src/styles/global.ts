@@ -19,7 +19,12 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   h1,h2,h3,h4,h5,h6, strong {
+    color: #01161E;
     font-weight: 600;
+  }
+
+  p, a{
+    color: #01161E;
   }
 
   button {

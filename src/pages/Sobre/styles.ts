@@ -28,11 +28,3 @@ export const SobreContent = styled.div`
         text-indent: 2vw;
     }
 `;
-
-export const CloseButton = styled.a`
-    cursor: pointer;
-    height: 5vh;
-    position: absolute;
-    right: 4vh;
-    top: 4vh;
-`;

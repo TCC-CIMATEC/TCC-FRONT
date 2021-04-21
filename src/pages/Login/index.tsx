@@ -1,13 +1,41 @@
-import { Container } from './styles';
+import Button, { CloseButton } from '../../components/Button';
+import { Wrapper } from '../Sobre/styles';
+import Container from '../Main/styles';
 
-import Button from '../../components/Button';
+import MailImg from '../../img/mail.svg';
+import { Form, Row } from '../../components/Form';
 
-function Login() {
+export function Login() {
   return (
     <Container>
-      <Button title="Entrar" background="#659157" />
-      <Button title="Ingressar em nova turma" background="#659157" />
-      <Button title="Cancelar" background="#D7263D" />
+      <Wrapper>
+        <CloseButton />
+        <img src={MailImg} alt="" />
+        <Form>
+          <h1>Entrar!</h1>
+          <Row>
+            <p>
+              <label htmlFor="form-login">Digite aqui seu e-mail ou nome de usuário</label>
+              <input type="text" name="form-login" id="form-login" placeholder="usuario@exemplo.com" />
+            </p>
+          </Row>
+          <Row>
+            <p>
+              <label htmlFor="form-password">Digite aqui sua senha</label>
+              <input type="password" name="form-password" id="form-password" placeholder="senha" />
+            </p>
+          </Row>
+          <Row>
+            <p style={{ textAlign: "center" }}>
+              <Button title="Entrar" background="#659157" backgroundHover="#46653c" />
+            </p>
+          </Row>
+          <p className="flex">
+            <a href="/esqueci-senha">Esqueci minha senha</a>
+            <a href="/cadastro">Cadastre-se</a>
+          </p>
+        </Form>
+      </Wrapper>
     </Container>
   );
 }
