@@ -6,6 +6,7 @@ import ConfirmaSenha from '../pages/Confirma-senha';
 import EsqueciSenha from '../pages/Esqueci-senha';
 import FaleConosco from '../pages/Fale-conosco';
 import Login from '../pages/Login';
+import TrilhaInicial from '../pages/Trilha-Inicial';
 
 import Main from '../pages/Main';
 import Sobre from '../pages/Sobre';
@@ -22,6 +23,7 @@ export default function Routes() {
                 <Route path="/cadastro" exact component={Cadastro} />
                 <Route path="/confirma-cadastro" exact component={ConfirmaCadastro} />
                 <Route path="/confirma-senha" exact component={ConfirmaSenha} />
+                <Route path="/trilha-inicial" exact component={TrilhaInicial} />
             </Switch>
             <Footer />
         </BrowserRouter>
