@@ -1,25 +1,25 @@
-import { Algoritmo, Container, Contexto, Image, Link, Paragraph, SubTitle, Title } from './styles';
 import AlgoritmoImg from "../../img/Algoritmo_tipos.jpg";
+import trilha from '../../services/trilhas.json';
+import { 
+  Algoritmo, 
+  Container, 
+  Contexto, 
+  Image, 
+  Link, 
+  Paragraph, 
+  SubTitle, 
+  Title } 
+from './styles';
 
 function TrilhaInicial() {
   return (
     <Container>
-      <Title>Pensamento computacional e sua importância nos dias atuais</Title>
+      <Title>{trilha[0].title}</Title>
       <Contexto>
-        <SubTitle>Introdução</SubTitle>
-        <Paragraph>A alta carga de conceitos abstratos nos anos iniciais faz com que o processo de ensino e aprendizagem
-        de lógica de programação seja considerado um desafio para estudantes. Programar não é uma tarefa trivial,
-        pois envolve algoritmos, lógica de programação e o entendimento de uma linguagem específica, sendo
-        aplicados conforme as regras de negócio de cada problema. Devido à essas dificuldades, somadas à altas
-        taxas de reprovação e desistências nos cursos dessa área, percebe-se um interesse cada vez menor das
-            pessoas em aprender programação.</Paragraph>
-        <Paragraph>Todavia, em pleno século 21, é importante que cada cidadão compreenda pelo menos os princípios básicos
-        da Ciência da Computação, visto que o ponto crucial desta ciência é a compreensão e habilidade de
-        desenvolver algoritmos. Logo, é válido aprender lógica de programação desde cedo, já que não é uma tarefa
-        simples e, se for compreendida cedo, irá beneficiar os futuros ingressantes na área. Ao mesmo tempo,
-        aqueles que optarem por outros ramos profissionais teriam desenvolvido habilidades que seriam úteis em
-            suas respectivas áreas de conhecimento. </Paragraph>
-        <Link href="https://books.google.com.br/books?hl=pt-BR&lr=&id=-R1nDwAAQBAJ&oi=fnd&pg=PT9&dq=l%C3%B3gica+de+programa%C3%A7%C3%A3o&ots=RD_hbH3uAh&sig=tETh9E-kSKOoDx8OtYjXGIqTErg#v=onepage&q=l%C3%B3gica%20de%20programa%C3%A7%C3%A3o&f=false">Saiba mais!</Link>
+        <SubTitle>{trilha[0].subtitle}</SubTitle>
+        <Paragraph>{trilha[0].paragraphOne}</Paragraph>
+        <Paragraph>{trilha[0].paragrahTwo}</Paragraph>
+        <Link href={trilha[0].link}>Saiba mais!</Link>
       </Contexto>
 
       <Algoritmo>

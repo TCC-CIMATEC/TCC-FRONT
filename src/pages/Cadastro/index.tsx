@@ -57,8 +57,8 @@ export function Cadastro() {
                         </span>
                     </Row>
                     <p className="flex" style={{ textAlign: "center" }}>
-                        <Button title="Cancelar" background="#D7263D" backgroundHover="#961a2a" />
-                        <Button title="Enviar" background="#659157" backgroundHover="#46653c" />
+                        <Button title="Cancelar" background="#D7263D" />
+                        <Button title="Enviar" background="#659157" />
                     </p>
                 </Form>
             </Wrapper>

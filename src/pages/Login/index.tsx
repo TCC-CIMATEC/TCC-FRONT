@@ -27,7 +27,7 @@ export function Login() {
           </Row>
           <Row>
             <p style={{ textAlign: "center" }}>
-              <Button title="Entrar" background="#659157" backgroundHover="#46653c" />
+              <Button title="Entrar" background="#659157" />
             </p>
           </Row>
           <p className="flex">

@@ -1,12 +1,25 @@
 import { WrapperFooter, About, Tcc, Contact } from "./styles";
 import GithubImage from '../../img/github.svg';
+import { Link } from "react-router-dom";
 function Footer() {
     return (
         <WrapperFooter>
             <About>
-                <li><a href="/">Home</a></li>
-                <li><a href="/sobre">Sobre o projeto</a></li>
-                <li><a href="/fale-conosco">Contato</a></li>
+                <li>
+                    <Link to="/">
+                        Home
+                    </Link>
+                </li>
+                <li>
+                    <Link to="/sobre">
+                        Sobre o projeto
+                    </Link>
+                </li>
+                <li>
+                    <Link to="/fale-conosco">
+                        Fale conosco
+                    </Link>
+                </li>
             </About>
             <Tcc>
                 <p>Trabalho de Conclusão de Curso - SENAI Cimatec</p>

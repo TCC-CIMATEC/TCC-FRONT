@@ -18,7 +18,7 @@ function ConfirmaSenha() {
                             Email de recuperação de senha enviado com sucesso! confira seu e-mail e siga as intruções para a troca de senha!
                         </p>
                     </Row>
-                    <Button title="Enviar" background="#659157" backgroundHover="#46653c" />
+                    <Button title="Enviar" background="#659157" />
                 </Content>
             </Wrapper>
         </Container>

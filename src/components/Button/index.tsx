@@ -4,12 +4,11 @@ import CloseImage from '../../img/close_big.svg';
 interface ButtonProps {
   title: string;
   background: string;
-  backgroundHover: string;
 }
 
-function Button({ title, background }: ButtonProps) {
+function Button({ title, background  }: ButtonProps) {
   return (
-    <ContainerButton background={background} backgroundHover={background}>
+    <ContainerButton background={background}>
       <Title>{title}</Title>
     </ContainerButton>
   );
