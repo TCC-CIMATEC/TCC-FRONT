@@ -18,7 +18,7 @@ function ConfirmaCadastro() {
                             Conta criada com sucesso! Seja bem-vindo(a) ao nosso espaço de aprendizado! Confira seu e-mail para mais detalhes!
                         </p>
                     </Row>
-                    <Button title="Enviar" background="#659157" backgroundHover="#46653c" />
+                    <Button title="Enviar" background="#659157" />
                 </Content>
             </Wrapper>
         </Container>

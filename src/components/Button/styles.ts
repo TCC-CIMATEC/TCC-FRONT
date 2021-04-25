@@ -2,7 +2,6 @@ import styled from 'styled-components';
 
 interface ContainerProps {
   background: string;
-  backgroundHover: string;
 }
 
 export const ContainerButton = styled.button<ContainerProps>`
@@ -17,7 +16,7 @@ export const ContainerButton = styled.button<ContainerProps>`
   border: none;
   transition: 0.3s;
   &:hover{
-    background-color: ${({ backgroundHover }) => backgroundHover};
+    filter: brightness(0.9);
   }
 `;
 
