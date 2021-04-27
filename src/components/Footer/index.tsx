@@ -1,5 +1,5 @@
 import { WrapperFooter, About, Tcc, Contact } from "./styles";
-import GithubImage from '../../img/github.svg';
+import GithubImage from '../../assets/github.svg';
 function Footer() {
     return (
         <WrapperFooter>

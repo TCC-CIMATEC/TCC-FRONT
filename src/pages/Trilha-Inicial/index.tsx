@@ -1,5 +1,5 @@
 import { Algoritmo, Container, Contexto, Image, Link, Paragraph, SubTitle, Title } from './styles';
-import AlgoritmoImg from "../../img/Algoritmo_tipos.jpg";
+import AlgoritmoImg from "../../assets/Algoritmo_tipos.jpg";
 
 function TrilhaInicial() {
   return (

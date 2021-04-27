@@ -2,7 +2,7 @@ import Button, { CloseButton } from "../../components/Button";
 import Container from "../Main/styles";
 import { Wrapper } from "../Sobre/styles";
 
-import CheckImg from '../../img/circle_check.svg';
+import CheckImg from '../../assets/circle_check.svg';
 import { Row } from "../../components/Form";
 import { Content } from "./styles";
 

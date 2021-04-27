@@ -2,7 +2,7 @@ import Button, { CloseButton } from '../../components/Button';
 import { Wrapper } from '../Sobre/styles';
 import Container from '../Main/styles';
 
-import MailImg from '../../img/mail.svg';
+import MailImg from '../../assets/mail.svg';
 import { Form, Row } from '../../components/Form';
 
 export function Login() {
