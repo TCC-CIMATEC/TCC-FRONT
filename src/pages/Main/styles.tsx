@@ -3,9 +3,10 @@ import styled from "styled-components";
 export const Container = styled.div`
     align-items: center;
     display: flex;
-    height: 80vh;
+    height: 85vh;
     justify-content: center;
     margin: 0 auto;
+    position: relative;
     width: 80%;
 `;
 

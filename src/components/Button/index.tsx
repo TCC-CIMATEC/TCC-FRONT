@@ -6,7 +6,7 @@ interface ButtonProps {
   background: string;
 }
 
-function Button({ title, background  }: ButtonProps) {
+function Button({ title, background }: ButtonProps) {
   return (
     <ContainerButton background={background}>
       <Title>{title}</Title>

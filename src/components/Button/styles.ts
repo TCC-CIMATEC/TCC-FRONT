@@ -20,7 +20,7 @@ export const ContainerButton = styled.button<ContainerProps>`
   }
 `;
 
-export const Title = styled.p`
+export const Title = styled.div`
   font-size: 14px;
   color: white;
   line-height: 100%;

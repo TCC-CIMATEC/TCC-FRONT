@@ -4,6 +4,7 @@ import Container from '../Main/styles';
 
 import MailImg from '../../img/mail.svg';
 import { Form, Row } from '../../components/Form';
+import { Link } from 'react-router-dom';
 
 export function Login() {
   return (
@@ -25,18 +26,20 @@ export function Login() {
               <input type="password" name="form-password" id="form-password" placeholder="senha" />
             </p>
           </Row>
-          <Row>
-            <p style={{ textAlign: "center" }}>
-              <Button title="Entrar" background="#659157" />
-            </p>
-          </Row>
+          <Link to="/dashboard">
+            <Row>
+              <p style={{ textAlign: "center" }}>
+                <Button title="Entrar" background="#659157" />
+              </p>
+            </Row>
+          </Link>
           <p className="flex">
             <a href="/esqueci-senha">Esqueci minha senha</a>
             <a href="/cadastro">Cadastre-se</a>
           </p>
         </Form>
       </Wrapper>
-    </Container>
+    </Container >
   );
 }
 

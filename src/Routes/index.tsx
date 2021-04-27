@@ -10,6 +10,7 @@ import TrilhaInicial from '../pages/Trilha-Inicial';
 
 import Main from '../pages/Main';
 import Sobre from '../pages/Sobre';
+import Dashboard from '../pages/Dashboard';
 
 export default function Routes() {
     return (
@@ -24,6 +25,7 @@ export default function Routes() {
                 <Route path="/confirma-cadastro" exact component={ConfirmaCadastro} />
                 <Route path="/confirma-senha" exact component={ConfirmaSenha} />
                 <Route path="/trilha-inicial" exact component={TrilhaInicial} />
+                <Route path="/dashboard" exact component={Dashboard} />
             </Switch>
             <Footer />
         </BrowserRouter>
