@@ -24,7 +24,7 @@ export default function Routes() {
                 <Route path="/cadastro" exact component={Cadastro} />
                 <Route path="/confirma-cadastro" exact component={ConfirmaCadastro} />
                 <Route path="/confirma-senha" exact component={ConfirmaSenha} />
-                <Route path="/trilha-inicial" exact component={TrilhaInicial} />
+                <Route path="/Trilha-Inicial" exact component={TrilhaInicial} />
                 <Route path="/dashboard" exact component={Dashboard} />
             </Switch>
             <Footer />
