@@ -1,10 +1,13 @@
 import Button from "../../components/Button";
+import SideMenu from "../../components/SideMenu";
 import { Link } from 'react-router-dom';
 import { Container, Banner, BannerContent, BannerImage } from "./styles";
 
 function Main() {
     return (
         <Container>
+            
+                <SideMenu/>
             <Banner>
                 <BannerContent>
                     <h1>Nome do Projeto</h1>
