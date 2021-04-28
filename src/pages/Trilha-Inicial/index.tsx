@@ -20,12 +20,12 @@ function TrilhaInicial() {
         <SubTitle>{trilha[0].subtitle}</SubTitle>
         <Paragraph>{trilha[0].paragraphOne}</Paragraph>
         <Paragraph>{trilha[0].paragrahTwo}</Paragraph>
-        <Link href={trilha[0].link}>Saiba mais!</Link>
+        <Link href={trilha[0].link} target = "_blank">Saiba mais!</Link>
 
-        <Title>{trilha[1].title}</Title>
+        <SubTitle>{trilha[1].title}</SubTitle>
         <Paragraph>{trilha[1].paragraphOne}</Paragraph>
         <Paragraph>{trilha[1].paragrahTwo}</Paragraph>
-        <Link href={trilha[1].link}>Saiba mais!</Link>
+        <Link href={trilha[1].link} target = "_blank">Saiba mais!</Link>
 
       </Contexto>
 
