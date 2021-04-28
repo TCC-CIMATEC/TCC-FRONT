@@ -11,8 +11,6 @@ export const Title = styled.h1``;
 
 export const Contexto = styled.div``;
 
-export const Algoritmo = styled.div``;
-
 export const SubTitle = styled.h2``;
 
 export const Paragraph = styled.p``;
