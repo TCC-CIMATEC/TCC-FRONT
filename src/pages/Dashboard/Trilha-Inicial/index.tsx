@@ -1,5 +1,5 @@
-import AlgoritmoImg from "../../img/Algoritmo_tipos.jpg";
-import trilha from '../../services/trilhas.json';
+import AlgoritmoImg from "../../../assets/Algoritmo_tipos.jpg";
+import trilha from '../../../services/trilhas.json';
 import { 
   Container, 
   Contexto, 
@@ -22,7 +22,7 @@ function TrilhaInicial() {
         <Paragraph>{trilha[0].paragrahTwo}</Paragraph>
         <Link href={trilha[0].link} target = "_blank">Saiba mais!</Link>
 
-        <SubTitle>{trilha[1].title}</SubTitle>
+        <SubTitle className="subtitulo">{trilha[1].title}</SubTitle>
         <Paragraph>{trilha[1].paragraphOne}</Paragraph>
         <Paragraph>{trilha[1].paragrahTwo}</Paragraph>
         <Link href={trilha[1].link} target = "_blank">Saiba mais!</Link>

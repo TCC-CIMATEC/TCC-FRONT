@@ -1,9 +1,9 @@
-import Button, { CloseButton } from '../../components/Button';
-import { Wrapper } from '../Sobre/styles';
-import Container from '../Main/styles';
+import Button, { CloseButton } from '../../../components/Button';
+import { Wrapper } from '../../Main/Sobre/styles';
+import Container from '../../Main/Home/styles';
 
-import MailImg from '../../img/mail.svg';
-import { Form, Row } from '../../components/Form';
+import MailImg from '../../../assets/mail.svg'
+import { Form, Row } from '../../../components/Form';
 import { Link } from 'react-router-dom';
 
 export function Login() {

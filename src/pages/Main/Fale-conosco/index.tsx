@@ -1,7 +1,7 @@
-import Container from "../Main/styles";
+import Container from "../Home/styles";
 import { Wrapper } from "../Sobre/styles";
-import Button, { CloseButton } from "../../components/Button";
-import { Form, Row } from "../../components/Form";
+import Button, { CloseButton } from "../../../components/Button";
+import { Form, Row } from "../../../components/Form";
 
 function FaleConosco() {
     return (

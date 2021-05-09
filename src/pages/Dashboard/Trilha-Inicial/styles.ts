@@ -7,15 +7,26 @@ export const Container = styled.div`
     margin: 2.5% auto 2.5% auto;
 `;
 
+export const Contexto = styled.div`
+    padding: 30px;
+    border-radius: 8px;
+`;
+
 export const Title = styled.h1``;
 
-export const Contexto = styled.div``;
 
-export const SubTitle = styled.h2``;
+export const SubTitle = styled.h2`
+    margin-top: 15px;
+`;
 
 export const Paragraph = styled.p``;
 
-export const Link = styled.a``;
+export const Link = styled.a`
+    margin-top: 15px;
+    &:hover{
+        color: red;
+    }
+`;
 
 export const Image = styled.img`
 width: 100%;
