@@ -1,4 +1,5 @@
 import Button from "../../components/Button";
+import SideMenu from "../../components/SideMenu";
 import { Link } from 'react-router-dom';
 import { Container, Banner, BannerContent, BannerImage } from "./styles";
 
