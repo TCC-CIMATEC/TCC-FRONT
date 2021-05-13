@@ -1,3 +1,4 @@
+import SideMenu from "../../components/SideMenu";
 import AlgoritmoImg from "../../img/Algoritmo_tipos.jpg";
 import trilha from '../../services/trilhas.json';
 import { 
@@ -13,7 +14,6 @@ from './styles';
 function TrilhaInicial() {
   return (
     <Container>
-      
       <Contexto>
 
         <Title>{trilha[0].title}</Title>
