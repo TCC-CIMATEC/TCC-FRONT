@@ -4,9 +4,10 @@ export const Container = styled.div`
     align-items: center;
     display: flex;
     height: 85vh;
-    justify-content: center;
     margin: 0 auto;
+    justify-content: center;
     position: relative;
+
     width: 80%;
 `;
 

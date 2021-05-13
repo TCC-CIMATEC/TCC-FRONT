@@ -34,3 +34,20 @@ export const LinkClose = styled.a`
     right: 4vh;
     top: 4vh;
 `;
+
+export const ContainerButtonDashBoard = styled.button<ContainerProps>`
+  position: relative;
+  height: 6vh;
+  color: rgba(255,255,255,0.8);
+  background-color: ${({ background }) => background};
+  font-size: 1.5rem;
+  border-radius: 3rem;
+  border: none;
+  padding : 2px 20px;
+  margin : 0 10px;
+  transition: 0.3s;
+  width : 20%;
+  &:hover{
+    filter: brightness(0.9);
+  }
+`;

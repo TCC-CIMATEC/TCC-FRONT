@@ -2,10 +2,13 @@ import Button, { CloseButton } from "../../components/Button";
 import { Form, Row } from "../../components/Form";
 import Container from "../Main/styles";
 import { Wrapper } from "../Sobre/styles";
+import SideMenu from "../../components/SideMenu";
+import Main from "../Main";
 
 export function Cadastro() {
     return (
         <Container style={{ height: "auto", padding: "8vh 0" }}>
+            
             <Wrapper style={{ height: "auto" }}>
                 <CloseButton />
                 <Form>
@@ -63,6 +66,7 @@ export function Cadastro() {
                 </Form>
             </Wrapper>
         </Container>
+        
     );
 }
 

@@ -1,4 +1,4 @@
-import { ContainerButton, LinkClose, Title } from './styles';
+import { ContainerButton, ContainerButtonDashBoard,  LinkClose, Title } from './styles';
 import CloseImage from '../../img/close_big.svg';
 
 interface ButtonProps {
@@ -20,6 +20,14 @@ export function CloseButton() {
       <img src={CloseImage} alt="Ícone fechar tela" />
     </LinkClose>
   );
+}
+
+export function ButtonDashBoard({ title, background }: ButtonProps){
+  return (
+    <ContainerButtonDashBoard background={background}>
+    <Title>{title}</Title>
+  </ContainerButtonDashBoard>
+  )
 }
 
 export default Button;
