@@ -1,5 +1,6 @@
 import { ContainerButton, ContainerButtonDashBoard,  LinkClose, Title } from './styles';
-import CloseImage from '../../img/close_big.svg';
+import CloseImage from '../../assets/close_big.svg';
+
 
 interface ButtonProps {
   title: string;

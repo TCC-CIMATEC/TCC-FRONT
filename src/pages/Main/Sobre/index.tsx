@@ -1,5 +1,5 @@
-import { CloseButton } from "../../components/Button";
-import Container from "../Main/styles";
+import { CloseButton } from "../../../components/Button";
+import Container from "../Home/styles";
 import { SobreContent, Wrapper } from "./styles";
 
 function Sobre() {

@@ -1,10 +1,9 @@
 import CardVertical from "../../components/Card-vertical";
-import Container from "../Main/styles";
-import { DashboardContent, DashboardWrapper, Lista, WrapperButton } from "./styles";
-import SideMenu from "../../components/SideMenu"
-
 import LockImg from '../../img/lock.png';
 import  { ButtonDashBoard } from "../../components/Button";
+import Container from "../Main/Home/styles";
+import { DashboardContent, DashboardWrapper, Lista, WrapperButton } from "../../components/Dashboard/styles";
+import SideMenu from "../../components/SideMenu";
 
 export function AlunoHome() {
     return (
@@ -61,7 +60,7 @@ export function AlunoTrilha() {
 export function Dashboard() {
     return (
         <Container style={{ width: "100%" }}>
-            <SideMenu />
+           <SideMenu />
             <DashboardWrapper>
                 <AlunoTrilha />
             </DashboardWrapper>

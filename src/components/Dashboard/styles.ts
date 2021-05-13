@@ -1,10 +1,19 @@
 import styled from "styled-components";
 
-export const DashboardWrapper = styled.div`
-    display: flex;
+export const Container = styled.div`
+    width: 100%; 
     height: 100%;
+    display: flex;
+
+`;
+
+export const Content = styled.div`
+    display: flex;
+    width: 100%;
+`;
+
+export const DashboardWrapper = styled.div`
     justify-content: center;
-    width: calc(100% - 40vh);
     h1{
         margin-bottom: 6vh;
     }

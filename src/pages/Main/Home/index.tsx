@@ -1,16 +1,17 @@
-import Button from "../../components/Button";
-import SideMenu from "../../components/SideMenu";
+
+import Button from "../../../components/Button";
+
 import { Link } from 'react-router-dom';
 import { Container, Banner, BannerContent, BannerImage } from "./styles";
 
-function Main() {
+function Home() {
     return (
         <Container>
             <Banner>
                 <BannerContent>
                     <h1>Nome do Projeto</h1>
                     <p>Liquorice dessert cake ice cream gummi bears lemon drops croissant ice cream. Soufflé tootsie roll caramels jelly beans caramels cake.</p>
-                    <Link to="/login">
+                    <Link className="link" to="/login">
                         <Button title="Começar" background="#01161E" />
                     </Link>
                 </BannerContent>
@@ -22,4 +23,4 @@ function Main() {
     );
 }
 
-export default Main;
+export default Home;

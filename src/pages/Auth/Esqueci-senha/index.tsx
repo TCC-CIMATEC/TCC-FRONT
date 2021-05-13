@@ -1,7 +1,7 @@
-import Button, { CloseButton } from "../../components/Button";
-import { Form, Row } from "../../components/Form";
-import Container from "../Main/styles";
-import { Wrapper } from "../Sobre/styles";
+import Button, { CloseButton } from "../../../components/Button";
+import { Form, Row } from "../../../components/Form";
+import Container from "../../Main/Home/styles";
+import { Wrapper } from "../../Main/Sobre/styles";
 
 function EsqueciSenha() {
     return (

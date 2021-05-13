@@ -3,7 +3,7 @@ import * as FaIcons from "react-icons/fa";
 import * as AiIcons from "react-icons/ai";
 import {SideMenuData} from "./SideMenuData";
 import {NavMenu, NavLine, NavMenuItems, AvatarImg, NavLineItem, ContentText, ContentTitle} from "./styles";
-import AvatarImage from '../../img/avatar.png';
+import AvatarImage from "../../assets/avatar.png";
 
 
 function SideMenu(){

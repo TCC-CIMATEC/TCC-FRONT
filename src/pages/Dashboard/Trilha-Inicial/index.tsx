@@ -1,15 +1,15 @@
-import AlgoritmoImg from "../../assets/Algoritmo_tipos.jpg";
-import trilha from '../../services/trilhas.json';
-import { Container,
-  Title,
-  SubTitle,
-  Paragraph,
-  Contexto,
-  Link,
-  Image
+import AlgoritmoImg from "../../../assets/Algoritmo_tipos.jpg"
+import trilha from "../../../services/trilhas.json"
 
-} from "../Dashboard/Trilha-Inicial/styles";
-
+import { 
+  Container, 
+  Contexto, 
+  Image, 
+  Link, 
+  Paragraph, 
+  SubTitle, 
+  Title } 
+from './styles';
 
 function TrilhaInicial() {
   return (
@@ -22,7 +22,7 @@ function TrilhaInicial() {
         <Paragraph>{trilha[0].paragrahTwo}</Paragraph>
         <Link href={trilha[0].link} target = "_blank">Saiba mais!</Link>
 
-        <SubTitle>{trilha[1].title}</SubTitle>
+        <SubTitle className="subtitulo">{trilha[1].title}</SubTitle>
         <Paragraph>{trilha[1].paragraphOne}</Paragraph>
         <Paragraph>{trilha[1].paragrahTwo}</Paragraph>
         <Link href={trilha[1].link} target = "_blank">Saiba mais!</Link>

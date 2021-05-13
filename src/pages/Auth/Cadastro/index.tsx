@@ -1,9 +1,7 @@
-import Button, { CloseButton } from "../../components/Button";
-import { Form, Row } from "../../components/Form";
-import Container from "../Main/styles";
-import { Wrapper } from "../Sobre/styles";
-import SideMenu from "../../components/SideMenu";
-import Main from "../Main";
+import Button, { CloseButton } from "../../../components/Button";
+import { Form, Row } from "../../../components/Form";
+import Container from "../../Main/Home/styles";
+import { Wrapper } from "../../Main/Sobre/styles";
 
 export function Cadastro() {
     return (
