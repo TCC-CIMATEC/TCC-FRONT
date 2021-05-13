@@ -1,10 +1,10 @@
 import CardVertical from "../../components/Card-vertical";
-import Sidebar from "../../components/Sidebar";
 import Container from "../Main/styles";
 import { DashboardContent, DashboardWrapper, Lista, WrapperButton } from "./styles";
+import SideMenu from "../../components/SideMenu"
 
 import LockImg from '../../img/lock.png';
-import Button from "../../components/Button";
+import  { ButtonDashBoard } from "../../components/Button";
 
 export function AlunoHome() {
     return (
@@ -51,8 +51,8 @@ export function AlunoTrilha() {
                 {item}
             </Lista>
             <WrapperButton>
-                <Button title="Voltar" background="#D7263D" />
-                <Button title="Continuar de onde parou" background="#659157" />
+                <ButtonDashBoard title="Voltar" background="#D7263D" />
+                <ButtonDashBoard title="Resumo" background="#659157" />
             </WrapperButton>
         </DashboardContent>
     );
@@ -61,7 +61,7 @@ export function AlunoTrilha() {
 export function Dashboard() {
     return (
         <Container style={{ width: "100%" }}>
-            <Sidebar />
+            <SideMenu />
             <DashboardWrapper>
                 <AlunoTrilha />
             </DashboardWrapper>
