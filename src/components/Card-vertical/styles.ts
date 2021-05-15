@@ -6,6 +6,7 @@ export const CardV = styled.article`
     box-shadow: 1px 1px 10px #00000087;
     cursor: pointer;
     height: 338px;
+    margin: 0 3vh;
     transition: 0.3s;
     width: 224px;
     &:hover{

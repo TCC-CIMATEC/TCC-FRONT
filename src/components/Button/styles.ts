@@ -5,10 +5,9 @@ interface ContainerProps {
 }
 
 export const ContainerButton = styled.button<ContainerProps>`
-  padding: 0 3vh;
+  padding: 0 2vh;
   position: relative;
   height: 6vh;
-  width: 20%;
   color: rgba(255,255,255,0.8);
   background-color: ${({ background }) => background};
   font-size: 1.5rem;
@@ -46,8 +45,26 @@ export const ContainerButtonDashBoard = styled.button<ContainerProps>`
   padding : 2px 20px;
   margin : 0 10px;
   transition: 0.3s;
-  width : 20%;
   &:hover{
     filter: brightness(0.9);
+  }
+`;
+
+export const ContainerLight = styled.button<ContainerProps>`
+  padding: 5px 20px;
+  position: relative;
+  background-color: transparent;
+  font-size: 1.5rem;
+  border-radius: 3rem;
+  border: none;
+  transition: 0.3s;
+  &:hover{
+    background-color: ${({ background }) => background};
+  }
+  div{
+    color: ${({ background }) => background} !important;
+    &:hover{
+      color: white !important;
+    }
   }
 `;

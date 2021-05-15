@@ -13,10 +13,17 @@ export const Content = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  .btn-content{
+    width: 90%;
+    button{
+      float: right;
+    }
+  }
 `;
 
 export const TurmaContent = styled.div`
   align-items: center;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
 `;

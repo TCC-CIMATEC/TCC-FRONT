@@ -1,4 +1,4 @@
-import { ContainerButton, ContainerButtonDashBoard,  LinkClose, Title } from './styles';
+import { ContainerButton, ContainerLight, ContainerButtonDashBoard, LinkClose, Title } from './styles';
 import CloseImage from '../../assets/close_big.svg';
 
 
@@ -23,12 +23,21 @@ export function CloseButton() {
   );
 }
 
-export function ButtonDashBoard({ title, background }: ButtonProps){
+export function ButtonDashBoard({ title, background }: ButtonProps) {
   return (
     <ContainerButtonDashBoard background={background}>
-    <Title>{title}</Title>
-  </ContainerButtonDashBoard>
+      <Title>{title}</Title>
+    </ContainerButtonDashBoard>
   )
 }
+
+export function ButtonLight({ title, background }: ButtonProps) {
+  return (
+    <ContainerLight background={background}>
+      <Title>{title}</Title>
+    </ContainerLight>
+  );
+}
+
 
 export default Button;

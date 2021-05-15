@@ -25,15 +25,10 @@ export const NavBar = styled.div`
 
 export const NavMenu = styled.nav`
   background-color: #1C7293;
-  width: 335px;
+  width: 25vw;
   height: 100%;
   display: flex;
   justify-content: center;
-  // position: fixed;
-  top: 0;
-  left: 0;
-  // z-index: 9;
-
   a, svg{
     color: white;
     text-decoration: none;
@@ -42,24 +37,27 @@ export const NavMenu = styled.nav`
 `;
 
 export const NavLine = styled.li`
-  display: flex;
-  justify-content: start;
   align-items: center;
-  padding: 8px 0px 8px 16px;
+  display: flex;
+  justify-content: center;
   list-style-type: none;
-  height: 50px;
   color: white;
+  width: 100%;
 
   a{
     text-decoration: none;
-    font-size: 18px;
-    width: 95%;
-    height: 100%;
+    font-size: 16px;
     display: flex;
     align-items: center;
-    padding: 0px 16px;
     border-radius: 4px;
     
+  }
+  div{
+    align-items: center;
+    display: flex;
+    flex: 1;
+    height: 100%;
+    padding: 10px;
   }
 `;
 
@@ -67,10 +65,10 @@ export const NavLineItem = styled.li<NavTextItemProps>`
   display: flex;
   justify-content: start;
   align-items: center;
-  padding: 8px 0px 8px 16px;
+  padding: 8px 0px;
   list-style-type: none;
-  height: 50px;
   color: white;
+  width: 100%;
 
   a{
     text-decoration: none;
@@ -86,13 +84,16 @@ export const NavLineItem = styled.li<NavTextItemProps>`
 `;
 
 export const NavMenuItems = styled.ul`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
   width: 100%;
-
   li{
     border-top: 1px solid white;
     
   }
-
   .no-border{
     border-top: none;
   }
@@ -100,17 +101,17 @@ export const NavMenuItems = styled.ul`
 
 export const AvatarImg = styled.img<AvatarImageProps>`
   width: 100%;
-  height: 150px;
 `;
 
 export const ContentText = styled.span`
   font-size: 12px;
-  margin:auto 12px;
   color: white;
+  margin-left: 0.5vw;
 `;
 
 export const ContentTitle = styled.span`
   margin:auto;
   color: white;
-  font-weigth: bold;
+  font-weight: bold;
+  padding: 10px;
 `;
