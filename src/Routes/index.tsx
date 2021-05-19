@@ -11,9 +11,11 @@ import TrilhaInicial from '../pages/Dashboard/Trilha-Inicial';
 import Home from '../pages/Main/Home';
 import Sobre from '../pages/Main/Sobre';
 import Aluno from '../pages/Dashboard/Aluno';
+import Professor from '../pages/Dashboard/Professor';
 import Turmas from '../pages/Dashboard/Turmas';
 import Modulos from '../pages/Dashboard/Modulos';
 import RankingAlunos from '../pages/Dashboard/Ranking-aluno';
+import RankingProfessor from '../pages/Dashboard/Ranking-professor';
 import NovaTurmaAluno from '../pages/Dashboard/Nova-turma-aluno';
 
 export default function Routes() {
@@ -30,9 +32,11 @@ export default function Routes() {
                 <Route path="/confirma-senha" exact component={ConfirmaSenha} />
                 <Route path="/trilha-inicial" exact component={TrilhaInicial} />
                 <Route path="/aluno" exact component={Aluno} />
+                <Route path="/professor" exact component={Professor} />
                 <Route path="/turmas" exact component={Turmas} />
                 <Route path="/modulos" exact component={Modulos} />
                 <Route path="/ranking-aluno" exact component={RankingAlunos} />
+                <Route path="/ranking-professor" exact component={RankingProfessor} />
                 <Route path="/nova-turma-aluno" exact component={NovaTurmaAluno} />
             </Switch>
             <Footer />
