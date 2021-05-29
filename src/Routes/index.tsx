@@ -17,6 +17,8 @@ import Modulos from '../pages/Dashboard/Modulos';
 import RankingAlunos from '../pages/Dashboard/Ranking-aluno';
 import RankingProfessor from '../pages/Dashboard/Ranking-professor';
 import NovaTurmaAluno from '../pages/Dashboard/Nova-turma-aluno';
+import NovaTurmaProfessor from '../pages/Dashboard/Nova-turma-professor';
+import DetalheAluno from '../pages/Dashboard/Detalhe-aluno';
 
 export default function Routes() {
     return (
@@ -38,6 +40,8 @@ export default function Routes() {
                 <Route path="/ranking-aluno" exact component={RankingAlunos} />
                 <Route path="/ranking-professor" exact component={RankingProfessor} />
                 <Route path="/nova-turma-aluno" exact component={NovaTurmaAluno} />
+                <Route path="/nova-turma-professor" exact component={NovaTurmaProfessor} />
+                <Route path="/detalhe-aluno" exact component={DetalheAluno} />
             </Switch>
             <Footer />
         </BrowserRouter>
