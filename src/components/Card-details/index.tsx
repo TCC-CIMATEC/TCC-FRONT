@@ -3,6 +3,7 @@ import * as FaIcons from "react-icons/fa";
 import * as AiIcons from "react-icons/ai";
 
 import AvatarImage from "../../assets/avatar.png";
+import { ButtonLight } from "../Button";
 
 interface CardProps {
     img: string;
@@ -56,6 +57,11 @@ export function CardDetails({ img, student }: CardProps) {
                         8 erros
                     </p>
                 </Points>
+
+                <div className="rowButton">
+                    <ButtonLight title={"Excluir"} background={"#D7263D"} />
+                    <ButtonLight title={"Ok"} background={"#659157"} />
+                </div>
             </legend>
         </CardV>
     );

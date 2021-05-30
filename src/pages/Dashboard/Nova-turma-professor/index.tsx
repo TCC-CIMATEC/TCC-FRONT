@@ -1,14 +1,13 @@
 import Button, { ButtonDashBoard } from '../../../components/Button';
-import Dashboard from '../../../components/Dashboard';
 import { Container, Content, ModuloContent, WhiteBox, Span } from './styles';
-import RankingImg from '../../../assets/ranking.png';
 import { Wrapper } from '../../Main/Sobre/styles';
 import { Form, Row } from '../../../components/Form';
+import DashboardProfessor from '../../../components/Dashboard';
 
 export function NovaTurmaProfessor() {
   return (
     <Container className="container-modulo">
-      <Dashboard>
+      <DashboardProfessor>
         <Content className="content-modulo">
           <ModuloContent>
             <Wrapper>
@@ -45,7 +44,7 @@ export function NovaTurmaProfessor() {
             </Wrapper>
           </ModuloContent>
         </Content>
-      </Dashboard>
+      </DashboardProfessor>
     </Container>
   );
 }

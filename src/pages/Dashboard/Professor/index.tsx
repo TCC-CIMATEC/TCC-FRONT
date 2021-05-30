@@ -2,12 +2,13 @@ import Dashboard from '../../../components/Dashboard';
 import { Container, Content, ProfessorContent } from './styles';
 import CardHorizontalProfessor from '../../../components/Card-horizontal-professor';
 import { ButtonDashBoard } from '../../../components/Button';
+import DashboardProfessor from '../../../components/Dashboard';
 
 
 export function Aluno() {
   return (
     <Container className="container-aluno">
-      <Dashboard>
+      <DashboardProfessor>
         <Content className="content-aluno">
           <h1>Turmas</h1>
           <ProfessorContent>
@@ -19,7 +20,7 @@ export function Aluno() {
             <ButtonDashBoard title="Nova turma" background="#659157" />
           </div>
         </Content>
-      </Dashboard>
+      </DashboardProfessor>
     </Container>
   );
 }

@@ -9,10 +9,13 @@ export const Container = styled.div`
     .btn-content{
         margin-top: 4vh;
     }
+    h3{
+        margin-top: 4vh;
+    }
 `;
 
 export const Contexto = styled.div`
-    padding: 15vh 5vh 2vh;
+    padding: 10vh 5vh 2vh;
     border-radius: 8px;
 `;
 
@@ -68,5 +71,51 @@ export const Light = styled.div`
     }
     span{
         color: #ffffff;
+    }
+`;
+
+export const Questions = styled.ul`
+    display: grid;
+    grid-template-columns: 50% 50%;
+    list-style-type: none;
+    margin: 2vh 0;
+    li{
+        border-radius: 10px;
+        box-shadow: 2px 2px 10px #00000060;
+        cursor: pointer;
+        height: 15vh;
+        margin: 1vh auto;
+        padding: 3vh;
+        transition: 0.3s;
+        width: 80%;
+        &:hover{
+            filter: brightness(0.8);
+        }
+        &.blue{
+            background-color: #065A82;
+        }
+        &.green{
+            background-color: #659157;
+        }
+        &.red{
+            background-color: #D7263D;
+        }
+        &.dark-blue{
+            background-color: #01161E;
+        }
+        a{
+            align-items: center;
+            color: #ffffff;
+            font-weight: 100;
+            display: flex;
+            justify-content: space-around;
+            &:hover{
+                color: #ffffff;
+            }
+        }
+        p{
+            color: #ffffff;
+            margin-left: 2vw;
+        }
     }
 `;
