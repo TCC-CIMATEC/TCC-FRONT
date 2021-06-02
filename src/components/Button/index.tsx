@@ -1,15 +1,16 @@
 import { ContainerButton, ContainerLight, ContainerButtonDashBoard, LinkClose, Title } from './styles';
 import CloseImage from '../../assets/close_big.svg';
+import { ButtonHTMLAttributes } from 'react';
 
 
-interface ButtonProps {
+interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   title: string;
   background: string;
 }
 
-function Button({ title, background }: ButtonProps) {
+function Button({ title, background, ...rest}: ButtonProps) {
   return (
-    <ContainerButton background={background}>
+    <ContainerButton {...rest} background={background}>
       <Title>{title}</Title>
     </ContainerButton>
   );

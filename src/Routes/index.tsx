@@ -1,4 +1,5 @@
-import { Switch, Route, BrowserRouter } from 'react-router-dom';
+import { Switch, BrowserRouter } from 'react-router-dom';
+import Route from './Route';
 import Footer from '../components/Footer';
 import Cadastro from '../pages/Auth/Cadastro';
 import ConfirmaCadastro from '../pages/Auth/Confirma-cadastro';
@@ -33,17 +34,17 @@ export default function Routes() {
                 <Route path="/cadastro" exact component={Cadastro} />
                 <Route path="/confirma-cadastro" exact component={ConfirmaCadastro} />
                 <Route path="/confirma-senha" exact component={ConfirmaSenha} />
-                <Route path="/trilha" exact component={TrilhaInicial} />
-                <Route path="/exercicio" exact component={Exercicio} />
-                <Route path="/aluno" exact component={Aluno} />
-                <Route path="/professor" exact component={Professor} />
-                <Route path="/turmas" exact component={Turmas} />
-                <Route path="/modulos" exact component={Modulos} />
-                <Route path="/ranking-aluno" exact component={RankingAlunos} />
-                <Route path="/ranking-professor" exact component={RankingProfessor} />
-                <Route path="/nova-turma-aluno" exact component={NovaTurmaAluno} />
-                <Route path="/nova-turma-professor" exact component={NovaTurmaProfessor} />
-                <Route path="/detalhe-aluno" exact component={DetalheAluno} />
+                <Route path="/trilha" exact component={TrilhaInicial} isPrivate />
+                <Route path="/exercicio" exact component={Exercicio} isPrivate />
+                <Route path="/aluno" exact component={Aluno} isPrivate />
+                <Route path="/professor" exact component={Professor} isPrivate />
+                <Route path="/turmas" exact component={Turmas} isPrivate />
+                <Route path="/modulos" exact component={Modulos} isPrivate />
+                <Route path="/ranking-aluno" exact component={RankingAlunos} isPrivate />
+                <Route path="/ranking-professor" exact component={RankingProfessor} isPrivate />
+                <Route path="/nova-turma-aluno" exact component={NovaTurmaAluno} isPrivate />
+                <Route path="/nova-turma-professor" exact component={NovaTurmaProfessor} isPrivate />
+                <Route path="/detalhe-aluno" exact component={DetalheAluno} isPrivate />
             </Switch>
             <Footer />
         </BrowserRouter>

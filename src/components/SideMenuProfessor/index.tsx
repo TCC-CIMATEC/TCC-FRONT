@@ -3,8 +3,11 @@ import { SideMenuData } from "./SideMenuData";
 import { NavMenu, NavLine, NavMenuItems, AvatarImg, NavLineItem, ContentText, ContentTitle } from "./styles";
 import AvatarImage from "../../assets/avatar.png";
 
+import { useAuth } from '../../hooks/AuthContext';
+import Button from "../Button";
 
 function SideMenuProfessor() {
+  const { signOut, user } = useAuth();
 
   return (
     <>
@@ -13,17 +16,24 @@ function SideMenuProfessor() {
           <AvatarImg src={AvatarImage} alt="Foto Avatar" />
           <NavLine className='no-border'>
             <ContentTitle>
-              Olá XXXXX
+              Olá {user.name}
               <p>Professor(a)</p>
             </ContentTitle>
           </NavLine>
           {SideMenuData.map((item, index) => {
             return (
               <NavLineItem key={index}>
-                <Link to={item.path} >
+                {item.title === 'Sair' ? (
+                  <Button onClick={signOut} title={item.title} background="#1C7293" >
+                    {item.icon}
+                    <ContentText>{item.title}</ContentText>
+                  </Button>
+                ) : (
+                  <Link to={item.path} >
                   {item.icon}
                   <ContentText>{item.title}</ContentText>
                 </Link>
+                )}
               </NavLineItem>
             )
 
