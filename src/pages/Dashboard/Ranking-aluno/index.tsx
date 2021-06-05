@@ -34,6 +34,7 @@ export function RankingAlunos() {
           <ModuloContent>
             <h1>Ranking</h1>
             <img src={RankingImg} alt="Ícone de ranking" />
+            <p className="ranking-atual">Você está no 1º lugar</p>
             <Lista>
               {item}
             </Lista>

@@ -1,6 +1,32 @@
 import styled from "styled-components";
 
-export const CardV = styled.article`
+export const CardList = styled.ul`
+    height: calc(330px + 6vh);
+    overflow : scroll;
+    overflow-x: hidden;
+
+    /* width */
+    ::-webkit-scrollbar {
+        width: 10px;
+    }
+
+    /* Track */
+    ::-webkit-scrollbar-track {
+        background: #f1f1f1;
+    }
+
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+        background: #888;
+    }
+
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+        background: #555;
+    }   
+`;
+
+export const CardV = styled.li`
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 1px 1px 10px #00000087;
@@ -8,6 +34,7 @@ export const CardV = styled.article`
     height: 110px;
     justify-content: space-between;
     margin: 2vh 0;
+    margin-right: 2vh;
     padding: 10px;
     transition: 0.3s;
     width: 338px;

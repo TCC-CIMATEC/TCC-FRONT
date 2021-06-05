@@ -6,25 +6,14 @@ import { Wrapper } from "../../Main/Sobre/styles";
 export function Cadastro() {
     return (
         <Container style={{ height: "auto", padding: "8vh 0" }}>
-            
+
             <Wrapper style={{ height: "auto" }}>
-                <CloseButton />
                 <Form>
                     <h1>Cadastre-se!</h1>
                     <Row>
                         <p>
                             <label htmlFor="form-name">Digite aqui seu nome completo</label>
                             <input type="text" name="form-name" id="form-name" placeholder="Nome Completo" />
-                        </p>
-                    </Row>
-                    <Row>
-                        <p>
-                            <label htmlFor="form-birth">Data de nascimento</label>
-                            <input type="date" name="form-birth" id="form-birth" placeholder="01/01/1990" />
-                        </p>
-                        <p>
-                            <label htmlFor="form-cpf">Digite aqui seu CPF</label>
-                            <input type="text" name="form-cpf" id="form-cpf" placeholder="123.456.789-10" />
                         </p>
                     </Row>
                     <Row>
@@ -64,7 +53,7 @@ export function Cadastro() {
                 </Form>
             </Wrapper>
         </Container>
-        
+
     );
 }
 

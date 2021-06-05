@@ -8,7 +8,7 @@ interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   background: string;
 }
 
-function Button({ title, background, ...rest}: ButtonProps) {
+function Button({ title, background, ...rest }: ButtonProps) {
   return (
     <ContainerButton {...rest} background={background}>
       <Title>{title}</Title>

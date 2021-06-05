@@ -1,13 +1,12 @@
-// import CardVertical from "../../components/Card-vertical";
-import SideMenu from "../SideMenu";
-import { Container, Content} from "./styles";
+import SideMenuProfessor from "../SideMenuProfessor";
+import { Container, Content } from "./styles";
 
 
 
-const Dashboard: React.FC = ({ children }) => {
+const DashboardProfessor: React.FC = ({ children }) => {
     return (
         <Container className="container-dashboard">
-            <SideMenu />
+            <SideMenuProfessor />
             <Content className="content-dashboard">
                 {children}
             </Content>
@@ -15,4 +14,4 @@ const Dashboard: React.FC = ({ children }) => {
     );
 }
 
-export default Dashboard;
+export default DashboardProfessor;

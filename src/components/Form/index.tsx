@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Form = styled.form`
     padding: 3vh 0;
-    width: 30vw;
+    width: 100%;
     h1{
         text-align: center;
     }

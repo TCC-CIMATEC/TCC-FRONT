@@ -8,6 +8,7 @@ export const CardV = styled.article`
     height: 120px;
     justify-content: space-between;
     margin: 2vh 0;
+    margin-right: 2vh;
     padding: 10px;
     transition: 0.3s;
     width: 338px;

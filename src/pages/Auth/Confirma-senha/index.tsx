@@ -10,7 +10,6 @@ function ConfirmaSenha() {
     return (
         <Container>
             <Wrapper style={{ width: "50%" }}>
-                <CloseButton />
                 <Content>
                     <img src={CheckImg} alt="Ícone check" />
                     <Row>

@@ -38,7 +38,6 @@ export function Login() {
   return (
     <Container>
       <Wrapper>
-        <CloseButton />
         <img src={MailImg} alt="" />
         <Form>
           <h1>Entrar!</h1>

@@ -1,13 +1,12 @@
 import Container from "../Home/styles";
 import { Wrapper } from "../Sobre/styles";
-import Button, { CloseButton } from "../../../components/Button";
+import Button from "../../../components/Button";
 import { Form, Row } from "../../../components/Form";
 
 function FaleConosco() {
     return (
         <Container>
             <Wrapper>
-                <CloseButton />
                 <Form>
                     <h1>Fale Conosco</h1>
                     <Row>
@@ -30,7 +29,7 @@ function FaleConosco() {
                     </Row>
                     <Row>
                         <p className="flex">
-                            <Button title="Cancelar" background="#D7263D"  />
+                            <Button title="Cancelar" background="#D7263D" />
                             <Button title="Enviar" background="#659157" />
                         </p>
                     </Row>

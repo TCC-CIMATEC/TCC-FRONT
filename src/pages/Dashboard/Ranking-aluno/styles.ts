@@ -26,6 +26,15 @@ export const ModuloContent = styled.div`
   flex-direction: column;
   justify-content: space-between;
   width: 50%;
+  img{
+    height: 20vh;
+  }
+  .ranking-atual{
+    color: #065A82;
+    font-size: 20px;
+    font-weight: 500;
+    margin: 2vh 0 5vh;
+  }
 `;
 
 export const Lista = styled.ul`

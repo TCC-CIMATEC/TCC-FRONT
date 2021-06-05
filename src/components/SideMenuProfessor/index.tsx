@@ -30,9 +30,9 @@ function SideMenuProfessor() {
                   </Button>
                 ) : (
                   <Link to={item.path} >
-                  {item.icon}
-                  <ContentText>{item.title}</ContentText>
-                </Link>
+                    {item.icon}
+                    <ContentText>{item.title}</ContentText>
+                  </Link>
                 )}
               </NavLineItem>
             )

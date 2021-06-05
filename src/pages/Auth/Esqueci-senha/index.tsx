@@ -7,7 +7,6 @@ function EsqueciSenha() {
     return (
         <Container>
             <Wrapper>
-                <CloseButton />
                 <Form>
                     <h1>Esqueceu sua senha?</h1>
                     <Row>

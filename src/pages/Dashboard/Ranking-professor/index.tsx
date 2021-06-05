@@ -2,7 +2,8 @@ import { ButtonDashBoard } from '../../../components/Button';
 import { Container, Content, ModuloContent, Lista, RankingContent } from './styles';
 import RankingImg from '../../../assets/ranking.png';
 import * as FaIcons from "react-icons/fa";
-import DashboardProfessor from '../../../components/Dashboard';
+import DashboardProfessor from '../../../components/DashboardProfessor';
+
 
 interface ItemProps {
   title: string;
@@ -44,7 +45,7 @@ function ItemLista({ title, img }: ItemListaProps) {
 export function RankingProfessor() {
   let item = [];
   let lista = [];
-  for (let i = 0; i < 5; i++) {
+  for (let i = 0; i < 10; i++) {
     item.push(<Item title={"Fulaninha"} />);
     lista.push(<ItemLista title={"Fulaninha"} img={"https://picsum.photos/500"} />);
   }
@@ -62,7 +63,7 @@ export function RankingProfessor() {
             </ModuloContent>
             <ModuloContent>
               <h1>Alunos</h1>
-              <Lista>
+              <Lista className="alunos">
                 {lista}
               </Lista>
             </ModuloContent>
