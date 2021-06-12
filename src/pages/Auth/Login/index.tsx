@@ -1,18 +1,15 @@
 import { ChangeEvent, useState } from 'react';
-import Button, { CloseButton } from '../../../components/Button';
+import Button from '../../../components/Button';
 import { Wrapper } from '../../Main/Sobre/styles';
 import Container from '../../Main/Home/styles';
 
 import MailImg from '../../../assets/mail.svg'
 import { Form, Row } from '../../../components/Form';
-import { Link } from 'react-router-dom';
 import { useAuth } from '../../../hooks/AuthContext';
 
 export function Login() {
-
   const [email, setEmail] = useState<string>('');
   const [password, setPassword] = useState<string>('');
-
 
   const handleChangeEmail = (e: ChangeEvent<HTMLInputElement>) =>
     setEmail(e.target.value);
@@ -20,12 +17,10 @@ export function Login() {
   const handleChangePassword = (e: ChangeEvent<HTMLInputElement>) =>
     setPassword(e.target.value);
 
-
   const { signIn } = useAuth();
-
   async function handleSendLogin(): Promise<void> {
     try {
-      console.log('tentou');
+      console.log('deixou true');
       signIn({
         email,
         password,
@@ -39,7 +34,7 @@ export function Login() {
     <Container>
       <Wrapper>
         <img src={MailImg} alt="" />
-        <Form>
+        <Form onSubmit={e => e.preventDefault()}>
           <h1>Entrar!</h1>
           <Row>
             <p>
@@ -53,13 +48,13 @@ export function Login() {
               <input onChange={handleChangePassword} type="password" name="form-password" id="form-password" placeholder="senha" />
             </p>
           </Row>
-          <Link to="/dashboard">
-            <Row>
-              <p style={{ textAlign: "center" }}>
-                <Button onClick={handleSendLogin} title="Entrar" background="#659157" />
-              </p>
-            </Row>
-          </Link>
+          <Row>
+              <Button 
+                onClick={handleSendLogin} 
+                title="Entrar" 
+                background="#659157"
+              />
+          </Row>
           <p className="flex">
             <a href="/esqueci-senha">Esqueci minha senha</a>
             <a href="/cadastro">Cadastre-se</a>
