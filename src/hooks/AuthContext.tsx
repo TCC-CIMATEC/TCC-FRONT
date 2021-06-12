@@ -4,7 +4,8 @@ import api from '../services/api';
 interface User {
   id: number;
   email: string;
-  name: string;
+  first_name: string;
+  last_name: string;
   phone: string;
   groups: [];
 }
@@ -44,8 +45,6 @@ export const AuthProvider: React.FC = ({ children }) => {
       email,
       password,
     });
-
-    console.log(response)
 
     const { token, user } = response.data;
 
