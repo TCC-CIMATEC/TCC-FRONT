@@ -26,7 +26,7 @@ export default function Routes() {
     return (
         <BrowserRouter>
             <Switch>
-                <Route path="/" exact component={Home} />
+                <Route path="/" exact component={Home} /> 
                 <Route path="/sobre" exact component={Sobre} />
                 <Route path="/fale-conosco" exact component={FaleConosco} />
                 <Route path="/login" exact component={Login} />
@@ -34,17 +34,21 @@ export default function Routes() {
                 <Route path="/cadastro" exact component={Cadastro} />
                 <Route path="/confirma-cadastro" exact component={ConfirmaCadastro} />
                 <Route path="/confirma-senha" exact component={ConfirmaSenha} />
+                
+                {/* Aluno */}
                 <Route path="/trilha" exact component={TrilhaInicial} isPrivate />
                 <Route path="/exercicio" exact component={Exercicio} isPrivate />
                 <Route path="/aluno" exact component={Aluno} isPrivate />
-                <Route path="/professor" exact component={Professor} isPrivate />
-                <Route path="/turmas" exact component={Turmas} isPrivate />
                 <Route path="/modulos" exact component={Modulos} isPrivate />
                 <Route path="/ranking-aluno" exact component={RankingAlunos} isPrivate />
-                <Route path="/ranking-professor" exact component={RankingProfessor} isPrivate />
                 <Route path="/nova-turma-aluno" exact component={NovaTurmaAluno} isPrivate />
+                <Route path="/turmas" exact component={Turmas} isPrivate />
+                
+                {/* Professor */}
                 <Route path="/nova-turma-professor" exact component={NovaTurmaProfessor} isPrivate />
+                <Route path="/professor" exact component={Professor} isPrivate />
                 <Route path="/detalhe-aluno" exact component={DetalheAluno} isPrivate />
+                <Route path="/ranking-professor" exact component={RankingProfessor} isPrivate />
             </Switch>
             <Footer />
         </BrowserRouter>
