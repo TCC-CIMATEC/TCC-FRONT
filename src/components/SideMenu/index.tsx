@@ -4,9 +4,11 @@ import * as AiIcons from "react-icons/ai";
 import { SideMenuData } from "./SideMenuData";
 import { NavMenu, NavLine, NavMenuItems, AvatarImg, NavLineItem, ContentText, ContentTitle } from "./styles";
 import AvatarImage from "../../assets/avatar.png";
+import { useAuth } from "../../hooks/AuthContext";
 
 
 function SideMenu() {
+  const { user } = useAuth();
 
   return (
     <>
@@ -14,7 +16,7 @@ function SideMenu() {
         <NavMenuItems>
           <AvatarImg src={AvatarImage} alt="Foto Avatar" />
           <NavLine className='no-border'>
-            <ContentTitle>Olá XXXXX</ContentTitle>
+            <ContentTitle>Olá {user.first_name}</ContentTitle>
           </NavLine>
           <NavLine>
             <div>
