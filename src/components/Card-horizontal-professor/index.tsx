@@ -1,6 +1,5 @@
-import Button, { ButtonLight } from "../Button";
 import { CardDescription, CardTitle, CardV } from "./styles";
-import * as FaIcons from "react-icons/fa";
+import { ButtonLight } from "../CardButton";
 
 interface CardProps {
     img: string;
@@ -15,7 +14,6 @@ export function CardHorizontalProfessor({ img, title, description }: CardProps) 
                 <CardTitle> {title} </CardTitle>
                 <CardDescription> {description} </CardDescription>
                 <div>
-                    <ButtonLight title="Excluir" background="#D7263D" />
                     <ButtonLight title="Acessar" background="#659157" />
                 </div>
             </legend>

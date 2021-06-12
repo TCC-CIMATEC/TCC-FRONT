@@ -14,13 +14,12 @@ import {
   Light
 }
   from './styles';
-import { ButtonDashBoard, CloseButton } from "../../../components/Button";
+import Button from "../../../components/Button";
 
 function TrilhaInicial() {
   return (
     <Container>
       <Contexto>
-        <CloseButton />
         <Title>{trilha[0].title}</Title>
         <SubTitle>{trilha[0].subtitle}</SubTitle>
         <Paragraph>{trilha[0].paragraphOne}</Paragraph>
@@ -36,8 +35,8 @@ function TrilhaInicial() {
       </Link>
 
       <div className="btn-content">
-        <ButtonDashBoard title="Anterior" background="#D7263D" />
-        <ButtonDashBoard title="Próximo" background="#659157" />
+        <Button title="Anterior" background="#D7263D" />
+        <Button title="Próximo" background="#659157" />
       </div>
     </Container>
   );

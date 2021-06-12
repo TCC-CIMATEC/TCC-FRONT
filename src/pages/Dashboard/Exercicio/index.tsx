@@ -1,4 +1,5 @@
 import * as FaIcons from "react-icons/fa";
+import Button from "../../../components/Button";
 
 import {
   Container,
@@ -12,13 +13,11 @@ import {
   Questions
 }
   from './styles';
-import { ButtonDashBoard, CloseButton } from "../../../components/Button";
 
 function Exercicio() {
   return (
     <Container>
       <Contexto>
-        <CloseButton />
         <Title>Atividade</Title>
         <SubTitle>Questão 01</SubTitle>
 
@@ -58,8 +57,8 @@ function Exercicio() {
       </Contexto>
 
       <div className="btn-content">
-        <ButtonDashBoard title="Anterior" background="#D7263D" />
-        <ButtonDashBoard title="Próximo" background="#659157" />
+        <Button title="Anterior" background="#D7263D" />
+        <Button title="Próximo" background="#659157" />
       </div>
     </Container>
   );
