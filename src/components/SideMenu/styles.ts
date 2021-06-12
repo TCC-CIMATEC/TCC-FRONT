@@ -90,10 +90,6 @@ export const NavMenuItems = styled.ul`
   margin: 0;
   padding: 0;
   width: 100%;
-  li{
-    border-top: 1px solid white;
-    
-  }
   .no-border{
     border-top: none;
   }
@@ -114,4 +110,42 @@ export const ContentTitle = styled.span`
   color: white;
   font-weight: bold;
   padding: 10px;
+`;
+
+export const MenuItems = styled.div`
+  flex: 1;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+`;
+export const MenuButton = styled.button`
+  display: flex;
+  flex-direction: row;
+  
+  width: 100%;
+  height: calc(100% / 6);
+  border: none;
+  border-top: 1px solid #9EB3C2;
+  border-bottom: 1px solid #9EB3C2;
+  padding-left: 16px;
+  align-items: center;
+
+  background-color: #1C7293;
+  transition: 0.3s;
+  
+  &:hover{
+    filter: brightness(0.9);
+  }
+`;
+export const MenuText = styled.p`
+  color: #fff;
+  font-weight: 600;
+  margin-left: 15px;
+`;
+
+export const TeacherText = styled.p`
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `;

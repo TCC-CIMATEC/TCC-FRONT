@@ -16,7 +16,7 @@ function SideMenuProfessor() {
           <AvatarImg src={AvatarImage} alt="Foto Avatar" />
           <NavLine className='no-border'>
             <ContentTitle>
-              Olá {user.name}
+              Olá {user.first_name}
               <p>Professor(a)</p>
             </ContentTitle>
           </NavLine>

@@ -1,8 +1,8 @@
-import { ButtonDashBoard } from '../../../components/Button';
 import { Container, Content, ModuloContent, Lista, RankingContent } from './styles';
 import RankingImg from '../../../assets/ranking.png';
 import * as FaIcons from "react-icons/fa";
 import DashboardProfessor from '../../../components/DashboardProfessor';
+import Button from '../../../components/Button';
 
 
 interface ItemProps {
@@ -69,8 +69,8 @@ export function RankingProfessor() {
             </ModuloContent>
           </RankingContent>
           <div className="btn-content">
-            <ButtonDashBoard title="Voltar" background="#D7263D" />
-            <ButtonDashBoard title="Criar turma" background="#659157" />
+            <Button title="Voltar" background="#D7263D" />
+            <Button title="Criar turma" background="#659157" />
           </div>
         </Content>
       </DashboardProfessor>

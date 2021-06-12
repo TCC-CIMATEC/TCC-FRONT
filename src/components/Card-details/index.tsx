@@ -3,7 +3,7 @@ import * as FaIcons from "react-icons/fa";
 import * as AiIcons from "react-icons/ai";
 
 import AvatarImage from "../../assets/avatar.png";
-import { ButtonLight } from "../Button";
+import Button from "../Button";
 
 interface CardProps {
     img: string;
@@ -59,8 +59,8 @@ export function CardDetails({ img, student }: CardProps) {
                 </Points>
 
                 <div className="rowButton">
-                    <ButtonLight title={"Excluir"} background={"#D7263D"} />
-                    <ButtonLight title={"Ok"} background={"#659157"} />
+                    <Button title={"Excluir"} background={"#D7263D"} />
+                    <Button title={"Ok"} background={"#659157"} />
                 </div>
             </legend>
         </CardV>

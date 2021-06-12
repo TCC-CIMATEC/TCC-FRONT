@@ -1,4 +1,4 @@
-import { ButtonDashBoard } from '../../../components/Button';
+import Button from '../../../components/Button';
 import CardHorizontal from '../../../components/Card-horizontal';
 import { CardList } from '../../../components/Card-horizontal-professor/styles';
 import Dashboard from '../../../components/Dashboard';
@@ -20,7 +20,7 @@ export function Turmas() {
             </CardList>
           </TurmaContent>
           <div className="btn-content">
-            <ButtonDashBoard title="Entrar em nova turma" background="#659157" />
+            <Button title="Entrar em nova turma" background="#659157" />
           </div>
         </Content>
       </Dashboard>

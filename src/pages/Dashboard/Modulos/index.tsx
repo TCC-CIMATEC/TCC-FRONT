@@ -1,5 +1,5 @@
-import { ButtonDashBoard } from '../../../components/Button';
 import LockImg from '../../../assets/lock.png';
+import Button from '../../../components/Button';
 import Dashboard from '../../../components/Dashboard';
 import { Container, Content, ModuloContent, Lista } from './styles';
 
@@ -37,8 +37,8 @@ export function Modulos() {
             </Lista>
           </ModuloContent>
           <div className="btn-content">
-            <ButtonDashBoard title="Voltar" background="#D7263D" />
-            <ButtonDashBoard title="Resumo" background="#659157" />
+            <Button title="Voltar" background="#D7263D" />
+            <Button title="Resumo" background="#659157" />
           </div>
         </Content>
       </Dashboard>

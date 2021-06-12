@@ -1,4 +1,4 @@
-import Button, { CloseButton } from "../../../components/Button";
+import Button from "../../../components/Button";
 import Container from "../../Main/Home/styles";
 import { Wrapper } from "../../Main/Sobre/styles";
 

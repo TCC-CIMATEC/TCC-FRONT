@@ -23,7 +23,7 @@ const Route: React.FC<RouteProps> = ({
           <Component />
         ) : (
           <Redirect
-            to={{ pathname: isPrivate ? '/' : '/aluno', state: { location } }}
+            to={{ pathname: isPrivate ? '/' : user.categoria === 'P' ? '/professor' : '/aluno', state: { location } }}
           />
         );
       }}
