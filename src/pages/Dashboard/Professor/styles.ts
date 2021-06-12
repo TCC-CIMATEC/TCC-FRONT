@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 
-
 export const Container = styled.div`
   width: 100%;
   height: 85vh;
@@ -13,8 +12,9 @@ export const Content = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  .btn-content{
+  .new-class{
     display: flex;
+    outline: none;
     justify-content: flex-end;
     width: 90%;
   }

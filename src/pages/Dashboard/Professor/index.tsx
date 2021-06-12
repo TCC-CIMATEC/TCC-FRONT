@@ -1,33 +1,30 @@
-import Dashboard from '../../../components/Dashboard';
 import { Container, Content, ProfessorContent } from './styles';
 import CardHorizontalProfessor from '../../../components/Card-horizontal-professor';
-import { ButtonDashBoard } from '../../../components/Button';
 import DashboardProfessor from '../../../components/Dashboard';
-import { CardList } from '../../../components/Card-horizontal-professor/styles';
 import { useState, useEffect } from 'react';
 import api from '../../../services/api';
+import Button from '../../../components/Button';
+import { Link } from 'react-router-dom';
+import { CardList } from '../../../components/Card-horizontal-professor/styles';
 
 interface Classes {
-  turma: {
-    id: number;
-    nome: string;
-    professor: {};
-    codigoTurma: string;
-    alunos: []
-  }
+  id: number;
+  nome: string;
+  professor: {};
+  codigoTurma: string;
+  alunos: []
 }
 
 export function Professor() {
   const [classes, setClasses] = useState<Classes[]>([]);
 
-  async function getClasses(){
-    await api.get('turma/').then((response) => {
-      setClasses(response.data);
-    }
-    );
-  }
-
   useEffect(() => {
+    async function getClasses(){
+      await api.get('turma/').then((response) => {
+        setClasses(response.data);
+      });
+    }
+
     getClasses();
   }, [])
   
@@ -39,15 +36,17 @@ export function Professor() {
           <ProfessorContent>
               {classes && (
                 <CardList>
-                  {classes.map(({turma}: Classes) => (
-                <CardHorizontalProfessor img={"https://picsum.photos/300/200"} title={turma.nome} description={turma.codigoTurma} />
-                ))}
-              </CardList>
+                  {
+                    classes.map(classes => (
+                      <CardHorizontalProfessor img={"https://picsum.photos/300/200"} title={classes.nome} description={classes.codigoTurma} />
+                    ))
+                  }
+                </CardList>
               )}
-          </ProfessorContent>
-          <div className="btn-content">
-            <ButtonDashBoard title="Nova turma" background="#659157" />
-          </div>
+            </ProfessorContent>
+          <Link to="/nova-turma-professor" className="new-class">
+            <Button title="Nova turma" background="#659157" />
+          </Link>
         </Content>
       </DashboardProfessor>
     </Container>
