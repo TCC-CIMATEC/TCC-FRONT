@@ -6,6 +6,8 @@ interface User {
   email: string;
   first_name: string;
   last_name: string;
+  categoria: 'P' | 'A';
+  genero: 'M' | 'F' | 'O';
   phone: string;
   groups: [];
 }
