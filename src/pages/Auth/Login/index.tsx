@@ -20,7 +20,6 @@ export function Login() {
   const { signIn } = useAuth();
   async function handleSendLogin(): Promise<void> {
     try {
-      console.log('deixou true');
       signIn({
         email,
         password,
