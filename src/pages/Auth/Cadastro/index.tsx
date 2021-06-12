@@ -1,10 +1,11 @@
 import React, {useState} from 'react';
-import { useHistory } from 'react-router-dom';
-import Button, { CloseButton } from "../../../components/Button";
+import { Link, useHistory } from 'react-router-dom';
+import Button from "../../../components/Button";
 import { Form, Row } from "../../../components/Form";
 import api from '../../../services/api';
 import Container from "../../Main/Home/styles";
 import { Wrapper } from "../../Main/Sobre/styles";
+import { FormFooter, RadioBox, Radios } from './styles';
 
 
 export function Cadastro() {
@@ -14,8 +15,11 @@ export function Cadastro() {
     const [phone, setPhone] = useState<string>('');
     const [password, setPassword] = useState<string>('');
     const [passwordConfirmation, setPasswordConfirmation] = useState<string>('');
-    const [role, setRole] = useState<'aluno' | 'professor'>('aluno');
-    const [gender, setGender] = useState<'masculino' | 'feminino' | 'outro'>('masculino');
+    const [isStudent, setIsStudent] = useState(true);
+    const [isTeacher, setIsTeacher] = useState(false);
+    const [isMale, setIsMale] = useState(true);
+    const [isFemale, setIsFemale] = useState(false);
+    const [isOther, setIsOther] = useState(false);
 
     async function handleRegistration(){
         if(!name || !email || !phone || !password || !passwordConfirmation){
@@ -28,13 +32,29 @@ export function Cadastro() {
             return;
         }
 
+        let categoria = 'A'
+
+        if(isTeacher){
+            categoria = 'P'
+        }
+
+        let genero = 'M'
+
+        if(isFemale){
+            genero = 'F'
+        }
+
+        if(isOther){
+            genero = 'O'
+        }
+
         const player = {
             email,
             password,
             phone,
             name,
-            genero: 'M',
-            categoria: role === 'professor' ? 'P' : 'A'
+            genero,
+            categoria,
         }
 
         await api.post('jogador/registration/', player)
@@ -110,37 +130,76 @@ export function Cadastro() {
                         </p>
                     </Row>
                     <Row>
-                        <span>
-                            <input 
-                                type="radio" 
-                                name="form-tipo" 
-                                id="form-aluno"
-                                checked={role === 'aluno'} 
-                                value="aluno"
-                                onClick={() => setRole('aluno')}
-                            />
-                            <label htmlFor="form-aluno">Sou aluno(a)</label>
-                        </span>
-                        <span>
-                            <input 
-                                type="radio" 
-                                name="form-tipo" 
-                                id="form-professor" 
-                                checked={role === 'professor'} 
-                                value="professor"
-                                onClick={() => setRole('professor')}
-                            />
-                            <label htmlFor="form-professor">Sou professor(a)</label>
-                        </span>
+                        <Radios>
+                            <RadioBox
+                                type="button"
+                                onClick={() => {
+                                    setIsStudent(true);
+                                    setIsTeacher(false);
+                                }}
+                                isActive={isStudent}
+                                >
+                                <span>Aluno</span>
+                            </RadioBox>
+                            <RadioBox
+                                type="button"
+                                onClick={() => {
+                                    setIsTeacher(true);
+                                    setIsStudent(false);
+                                }}
+                                isActive={isTeacher}
+                                >
+                                <span>Professor</span>
+                            </RadioBox>
+                        </Radios>
                     </Row>
-                    <p className="flex" style={{ textAlign: "center" }}>
-                        <Button title="Cancelar" background="#D7263D" />
-                        <Button 
-                            title="Enviar" 
-                            background="#659157"
-                            onClick={() => handleRegistration()} 
-                        />
-                    </p>
+                    <Row>
+                        <Radios>
+                            <RadioBox
+                                type="button"
+                                onClick={() => {
+                                    setIsMale(true);
+                                    setIsFemale(false);
+                                    setIsOther(false);
+                                }}
+                                isActive={isMale}
+                                >
+                                <span>Masculino</span>
+                            </RadioBox>
+                            <RadioBox
+                                type="button"
+                                onClick={() => {
+                                    setIsMale(false);
+                                    setIsFemale(true);
+                                    setIsOther(false);
+                                }}
+                                isActive={isFemale}
+                                >
+                                <span>Feminino</span>
+                            </RadioBox>
+                            <RadioBox
+                                type="button"
+                                onClick={() => {
+                                    setIsMale(false);
+                                    setIsFemale(false);
+                                    setIsOther(true);
+                                }}
+                                isActive={isOther}
+                                >
+                                <span>Outro</span>
+                            </RadioBox>
+                        </Radios>
+                    </Row>
+                        <FormFooter>
+                            <Link to="/login">
+                                <Button title="Voltar" background="#D7263D" />
+                            </Link>
+                            <Button 
+                                title="Cadastrar" 
+                                background="#659157"
+                                onClick={() => handleRegistration()} 
+                            />
+                        </FormFooter>
                 </Form>
             </Wrapper>
         </Container>
