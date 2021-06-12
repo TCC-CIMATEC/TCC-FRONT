@@ -1,5 +1,4 @@
-import { ContainerButton, ContainerLight, ContainerButtonDashBoard, LinkClose, Title } from './styles';
-import CloseImage from '../../assets/close_big.svg';
+import { ContainerButton, Title } from './styles';
 import { ButtonHTMLAttributes } from 'react';
 
 
@@ -15,30 +14,5 @@ function Button({ title, background, ...rest }: ButtonProps) {
     </ContainerButton>
   );
 }
-
-export function CloseButton() {
-  return (
-    <LinkClose href="#">
-      <img src={CloseImage} alt="Ícone fechar tela" />
-    </LinkClose>
-  );
-}
-
-export function ButtonDashBoard({ title, background }: ButtonProps) {
-  return (
-    <ContainerButtonDashBoard background={background}>
-      <Title>{title}</Title>
-    </ContainerButtonDashBoard>
-  )
-}
-
-export function ButtonLight({ title, background }: ButtonProps) {
-  return (
-    <ContainerLight background={background}>
-      <Title>{title}</Title>
-    </ContainerLight>
-  );
-}
-
 
 export default Button;
