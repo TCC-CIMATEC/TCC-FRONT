@@ -12,9 +12,16 @@ export const CardV = styled.article`
     &:hover{
         filter: brightness(0.9);
     }
-    img{
+    div.gray{
+        background-color: #01161E;
         border-radius: 10px 10px 0 0;
+        height: 50%;
         width: 100%;
+        img{
+            height: 100%;
+            margin: 0 auto;
+            padding: 2vh;
+        }
     }
     legend{
         padding: 3vh;

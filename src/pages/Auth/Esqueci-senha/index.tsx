@@ -1,13 +1,17 @@
 import Button from "../../../components/Button";
 import { Form, Row } from "../../../components/Form";
 import Container from "../../Main/Home/styles";
-import { Wrapper } from "../../Main/Sobre/styles";
+import { Circle, Wrapper } from "../../Main/Sobre/styles";
+import LogoImg from '../../../assets/CodeWingsWhite.svg';
 
 function EsqueciSenha() {
     return (
         <Container>
             <Wrapper>
                 <Form>
+                    <Circle>
+                        <img src={LogoImg} alt="Logo Code Wings" />
+                    </Circle>
                     <h1>Esqueceu sua senha?</h1>
                     <Row>
                         <p>

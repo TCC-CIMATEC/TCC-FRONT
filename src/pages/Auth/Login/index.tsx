@@ -1,7 +1,8 @@
 import { ChangeEvent, useState } from 'react';
 import Button from '../../../components/Button';
-import { Wrapper } from '../../Main/Sobre/styles';
+import { Circle, Wrapper } from '../../Main/Sobre/styles';
 import Container from '../../Main/Home/styles';
+import LogoImg from '../../../assets/CodeWingsWhite.svg';
 
 import MailImg from '../../../assets/mail.svg'
 import { Form, Row } from '../../../components/Form';
@@ -32,8 +33,10 @@ export function Login() {
   return (
     <Container>
       <Wrapper>
-        <img src={MailImg} alt="" />
         <Form onSubmit={e => e.preventDefault()}>
+          <Circle>
+            <img src={LogoImg} alt="Logo Code Wings" />
+          </Circle>
           <h1>Entrar!</h1>
           <Row>
             <p>
@@ -48,11 +51,11 @@ export function Login() {
             </p>
           </Row>
           <Row>
-              <Button 
-                onClick={handleSendLogin} 
-                title="Entrar" 
-                background="#659157"
-              />
+            <Button
+              onClick={handleSendLogin}
+              title="Entrar"
+              background="#659157"
+            />
           </Row>
           <p className="flex">
             <a href="/esqueci-senha">Esqueci minha senha</a>

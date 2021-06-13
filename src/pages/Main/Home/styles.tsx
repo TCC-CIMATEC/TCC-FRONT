@@ -7,18 +7,21 @@ export const Container = styled.div`
     margin: 0 auto;
     justify-content: center;
     position: relative;
-
     width: 80%;
 `;
 
 export const Banner = styled.div`
+    align-items: center;
     display: flex;
-    justify-content: center;
+    height: 100%;
+    justify-content: space-between;
+    width: 40vw;
 `;
 
 export const BannerContent = styled.div`
     display: flex;
     flex-direction: column;
+    height: 50%;
     justify-content: space-between;
     padding: 5rem 0 0;
     h1{
@@ -27,9 +30,9 @@ export const BannerContent = styled.div`
 `;
 
 export const BannerImage = styled.div`
-    width: 50%;
+    height: 80%;
     img{
-        width: 100%;
+        height: 100%;
     }
 `;
 

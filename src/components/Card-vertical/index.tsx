@@ -9,7 +9,9 @@ interface CardProps {
 export function CardVertical({ img, title, description }: CardProps) {
     return (
         <CardV>
-            <img src={img} alt={`Trilha ${title}`} />
+            <div className="gray">
+                <img src={img} alt={`Trilha ${title}`} />
+            </div>
             <legend>
                 <CardTitle> {title} </CardTitle>
                 <CardDescription> {description} </CardDescription>

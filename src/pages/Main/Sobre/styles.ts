@@ -6,18 +6,32 @@ export const Wrapper = styled.div`
     display: flex;
     height: 90%;
     justify-content: center;
-    padding: 8vh 15vh;
+    padding: 0 15vh;
     position: relative;
     img{
         height: 100%;
     }
 `;
 
+export const Circle = styled.div`
+    background-color: #01161E;
+    border-radius: 50%;
+    height: 18vh;
+    margin: 0 auto;
+    padding: 3vh;
+    width: 18vh;
+    img{
+        height: 100%;
+        width: 100%;
+    }
+`
+
 export const SobreContent = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     padding: 5vh 0;
+    width: 100%;
     h1{
         text-transform: uppercase;
     }
