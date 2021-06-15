@@ -13,10 +13,10 @@ export function Aluno() {
           <h1>Trilhas de estudo</h1>
           <AlunoContent>
             <Link to="/modulos">
-              <CardVertical img={LogoImg} title={"Lógica de programação"} description={"Aprenda sobre os quatro pilares do Pensamento Computacional, de Jeannete Wing"} />
+              <CardVertical img={LogoImg} title={"Pensamento computacional"} description={"Aprenda sobre os quatro pilares do Pensamento Computacional, de Jeannete Wing"} />
             </Link>
             <Link to="/modulos">
-              <CardVertical img={LogoImg} title={"Pensamento computacional"} description={"Aprenda sobre os quatro pilares do Pensamento Computacional, de Jeannete Wing"} />
+              <CardVertical img={LogoImg} title={"Lógica de programação"} description={"Aprenda sobre os quatro pilares do Pensamento Computacional, de Jeannete Wing"} />
             </Link>
           </AlunoContent>
         </Content>

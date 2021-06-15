@@ -56,7 +56,9 @@ function SideMenu() {
               <FaIcons.FaTrophy
                 size={30}
               />
-              <ContentText>1º lugar</ContentText>
+              <Link to="ranking-aluno">
+                <ContentText>1º lugar</ContentText>
+              </Link>
             </div>
             <div>
               <FaIcons.FaGraduationCap

@@ -22,6 +22,8 @@ import DetalheAluno from '../pages/Dashboard/Detalhe-aluno';
 import TrilhaInicial from '../pages/Dashboard/Trilha-Inicial';
 import Exercicio from '../pages/Dashboard/Exercicio';
 import AlterarSenha from '../pages/Dashboard/Alterar-senha';
+import ConfirmaQuestao from '../pages/Dashboard/Confirma-questao';
+import ErrouQuestao from '../pages/Dashboard/Errou-questao';
 
 export default function Routes() {
     return (
@@ -38,6 +40,8 @@ export default function Routes() {
                 
                 {/* Aluno */}
                 <Route path="/trilha" exact component={TrilhaInicial} isPrivate />
+                <Route path="/confirma-questao" exact component={ConfirmaQuestao} isPrivate />
+                <Route path="/errou-questao" exact component={ErrouQuestao} isPrivate />
                 <Route path="/exercicio" exact component={Exercicio} isPrivate />
                 <Route path="/aluno" exact component={Aluno} isPrivate />
                 <Route path="/modulos" exact component={Modulos} isPrivate />

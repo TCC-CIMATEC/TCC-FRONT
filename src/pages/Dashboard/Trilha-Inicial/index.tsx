@@ -1,42 +1,28 @@
-import AlgoritmoImg from "../../../assets/Algoritmo_tipos.jpg"
-import trilha from "../../../services/trilhas.json"
-
-import LightImg from "../../../assets/light.png";
+import PensamentoImg from "../../../assets/pensamento.jpg"
 
 import {
   Container,
   Contexto,
   Image,
-  Link,
-  Paragraph,
-  SubTitle,
   Title,
-  Light
 }
   from './styles';
 import Button from "../../../components/Button";
+import { Link } from "react-router-dom";
 
 function TrilhaInicial() {
   return (
     <Container>
       <Contexto>
-        <Title>{trilha[0].title}</Title>
-        <SubTitle>{trilha[0].subtitle}</SubTitle>
-        <Paragraph>{trilha[0].paragraphOne}</Paragraph>
-        <Paragraph>{trilha[0].paragrahTwo}</Paragraph>
+        <Title>Pensamento Computacional</Title>
       </Contexto>
 
-      <Image src={AlgoritmoImg} />
-      <Link href={trilha[0].link} target="_blank" style={{ textDecoration: "none" }}>
-        <Light>
-          <img src={LightImg} alt="Ìcone lâmpada" />
-          <span>Saiba mais!</span>
-        </Light>
-      </Link>
+      <Image src={PensamentoImg} />
 
       <div className="btn-content">
-        <Button title="Anterior" background="#D7263D" />
-        <Button title="Próximo" background="#659157" />
+        <Link to="exercicio" >
+          <Button title="Próximo" background="#659157" />
+        </Link>
       </div>
     </Container>
   );

@@ -1,65 +1,89 @@
 import * as FaIcons from "react-icons/fa";
-import Button from "../../../components/Button";
-
+import { useHistory } from "react-router-dom";
+import PensamentoImg from "../../../assets/pensamento_questao.jpg"
+import { useAuth } from "../../../hooks/AuthContext";
+import api from "../../../services/api";
 import {
   Container,
   Contexto,
   Image,
   Link,
-  Paragraph,
-  SubTitle,
   Title,
-  Light,
   Questions
 }
   from './styles';
 
 function Exercicio() {
+  const {user} = useAuth();
+  const history = useHistory();
+
+  async function handleClickQuestion(question: number){
+    if(question === 1){
+      try {
+        const newLevel = {
+          aluno: user.email,
+          nivel: 3,
+          pontuacao: 20
+        }
+        await api.put('jogador/update/', newLevel)
+      } catch {
+        console.error('Erro ao computar sua questão, tente novamente.')
+        return;
+      } finally {
+        history.push('confirma-questao')
+      }
+    } else {
+      history.push('errou-questao')
+    }
+  }
+
   return (
     <Container>
       <Contexto>
         <Title>Atividade</Title>
-        <SubTitle>Questão 01</SubTitle>
-
-        <h3>
-          Liquorice dessert cake ice cream gummi bears lemon drops croissant ice cream. Soufflé tootsie roll caramels jelly beans caramels cake. Marshmallow chupa chups cake marzipan croissant topping tiramisu cotton candy sweet roll. Icing croissant chocolate marshmallow chocolate. Halvah marshmallow chocolate bar danish.
-        </h3>
-
+        <Image src={PensamentoImg} />
         <Questions>
-          <li className="blue">
+          <li 
+            onClick={() => handleClickQuestion(1)}
+            className="blue"
+          >
             <Link>
               <span><FaIcons.FaCircle /></span>
-              <p>Liquorice dessert cake ice cream gummi bears lemon drops croissant ice cream.</p>
+              <p>Lógica da programação e como funcionam os algoritmos</p>
             </Link>
           </li>
 
-          <li className="green">
+          <li 
+            onClick={() => handleClickQuestion(2)}
+            className="green"
+          >
             <Link>
               <span><FaIcons.FaHeart /></span>
-              <p>Liquorice dessert cake ice cream gummi bears lemon drops croissant ice cream.</p>
+              <p>A maneira como funcionam os sites e as redes sociais.</p>
             </Link>
           </li>
 
-          <li className="red">
+          <li 
+            onClick={() => handleClickQuestion(3)}
+            className="red"
+          >
             <Link>
               <span><FaIcons.FaMoon /></span>
-              <p>Liquorice dessert cake ice cream gummi bears lemon drops croissant ice cream.</p>
+              <p>O manuseio e a função dos aplicativos digitais.</p>
             </Link>
           </li>
 
-          <li className="dark-blue">
+          <li 
+            onClick={() => handleClickQuestion(4)}
+            className="dark-blue"
+          >
             <Link>
               <span><FaIcons.FaSquare /></span>
-              <p>Liquorice dessert cake ice cream gummi bears lemon drops croissant ice cream.</p>
+              <p>O valor dos projetos colaborativos para a globalização.</p>
             </Link>
           </li>
         </Questions>
       </Contexto>
-
-      <div className="btn-content">
-        <Button title="Anterior" background="#D7263D" />
-        <Button title="Próximo" background="#659157" />
-      </div>
     </Container>
   );
 }

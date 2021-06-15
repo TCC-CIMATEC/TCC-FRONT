@@ -36,7 +36,7 @@ export function Professor() {
         <Content className="content-aluno">
           <h1>Turmas</h1>
           <ProfessorContent>
-              {classes && (
+              {classes.length > 0 ? (
                 <CardList>
                   {
                     classes.map(classes => (
@@ -44,6 +44,8 @@ export function Professor() {
                     ))
                   }
                 </CardList>
+              ): (
+                <p>Você ainda não possui turmas, crie a sua e compartilhe com seus alunos.</p>
               )}
             </ProfessorContent>
           <Link to="/nova-turma-professor" className="new-class">

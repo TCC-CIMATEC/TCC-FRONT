@@ -1,4 +1,6 @@
+import { Link } from 'react-router-dom';
 import LockImg from '../../../assets/lock.png';
+import PlayImg from '../../../assets/play_circle_outline.png'
 import Button from '../../../components/Button';
 import Dashboard from '../../../components/Dashboard';
 import { Container, Content, ModuloContent, Lista } from './styles';
@@ -33,13 +35,19 @@ export function Modulos() {
         <Content className="content-modulo">
           <ModuloContent>
             <Lista>
-              {item}
+            <Link to="trilha">
+              <li>
+                <span>
+                  <img src="https://picsum.photos/500" alt="" />
+                </span>
+                Iniciando Pensamento Computacional
+                <span>
+                  <img src={PlayImg} alt="Ícone bloqueado" />
+                </span>
+              </li>
+            </Link>
             </Lista>
           </ModuloContent>
-          <div className="btn-content">
-            <Button title="Voltar" background="#D7263D" />
-            <Button title="Resumo" background="#659157" />
-          </div>
         </Content>
       </Dashboard>
     </Container>

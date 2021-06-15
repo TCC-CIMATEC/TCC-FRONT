@@ -2,8 +2,8 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
     align-items : center;
-    width: 90%;
-    margin: 2.5% auto 2.5% auto;
+    justify-content: center;
+    height: 100vh;
     display : flex;
     flex-direction: column;
     .btn-content{
@@ -15,8 +15,12 @@ export const Container = styled.div`
 `;
 
 export const Contexto = styled.div`
-    padding: 10vh 5vh 2vh;
+    padding: 0vh 5vh 2vh;
     border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 `;
 
 export const Title = styled.h1`
@@ -46,8 +50,9 @@ export const Link = styled.a`
 `;
 
 export const Image = styled.img`
-height : 100%;
-width: 60%;
+display: flex;
+justify-content: center;
+align-items: center;
 `;
 
 export const Light = styled.div`
