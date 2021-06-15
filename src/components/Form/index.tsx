@@ -30,7 +30,7 @@ export const Form = styled.form`
             position: absolute;
         }
         input, textarea{
-            background-color: #9EB3C2;
+            background-color: #fff;
             border: none;
             line-height: 6vh;
             padding-left: 1vw;
