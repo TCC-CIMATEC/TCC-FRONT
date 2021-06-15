@@ -21,6 +21,7 @@ import NovaTurmaProfessor from '../pages/Dashboard/Nova-turma-professor';
 import DetalheAluno from '../pages/Dashboard/Detalhe-aluno';
 import TrilhaInicial from '../pages/Dashboard/Trilha-Inicial';
 import Exercicio from '../pages/Dashboard/Exercicio';
+import AlterarSenha from '../pages/Dashboard/Alterar-senha';
 
 export default function Routes() {
     return (
@@ -43,6 +44,7 @@ export default function Routes() {
                 <Route path="/ranking-aluno" exact component={RankingAlunos} isPrivate />
                 <Route path="/nova-turma-aluno" exact component={NovaTurmaAluno} isPrivate />
                 <Route path="/turmas" exact component={Turmas} isPrivate />
+                <Route path="/alterar-senha" exact component={AlterarSenha} isPrivate />
                 
                 {/* Professor */}
                 <Route path="/nova-turma-professor" exact component={NovaTurmaProfessor} isPrivate />

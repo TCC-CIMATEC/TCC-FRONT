@@ -6,6 +6,7 @@ import api from '../../../services/api';
 import Button from '../../../components/Button';
 import { Link } from 'react-router-dom';
 import { CardList } from '../../../components/Card-horizontal-professor/styles';
+import { useAuth } from '../../../hooks/AuthContext';
 
 interface Classes {
   id: number;
@@ -16,11 +17,12 @@ interface Classes {
 }
 
 export function Professor() {
+  const {user} = useAuth();
   const [classes, setClasses] = useState<Classes[]>([]);
 
   useEffect(() => {
     async function getClasses(){
-      await api.get('turma/').then((response) => {
+      await api.get(`turma/?id=&professor__id=${user.id}&alunos__user__id=`).then((response) => {
         setClasses(response.data);
       });
     }

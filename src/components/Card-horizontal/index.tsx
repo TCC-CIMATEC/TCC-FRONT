@@ -1,6 +1,6 @@
 import { CardDescription, CardTitle, CardV } from "./styles";
 import * as FaIcons from "react-icons/fa";
-import Button from "../Button";
+import {ButtonLight} from '../CardButton'
 
 interface CardProps {
     img: string;
@@ -17,8 +17,7 @@ export function CardHorizontal({ img, title, description }: CardProps) {
                     <FaIcons.FaTrophy style={{ marginRight: "0.5vw" }} /> 1º lugar
                 </CardDescription>
                 <CardDescription> {description} </CardDescription>
-                <Button title="Excluir" background="#D7263D" />
-                <Button title="Acessar" background="#659157" />
+                <ButtonLight title="Acessar" background="#659157" />
             </legend>
             <img src={img} alt={`Trilha ${title}`} />
         </CardV>

@@ -6,7 +6,7 @@ import Button from '../../../components/Button';
 import { useAuth } from '../../../hooks/AuthContext';
 import { useState } from 'react';
 import api from '../../../services/api';
-import { useHistory } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 
 export function NovaTurmaAluno() {
   const {user} = useAuth();
@@ -53,7 +53,6 @@ export function NovaTurmaAluno() {
                   </p>
                 </Row>
                 <Row>
-                    <Button title="Cancelar" background="#D7263D" />
                     <Button 
                       title="Entrar" 
                       background="#659157" 
@@ -63,6 +62,9 @@ export function NovaTurmaAluno() {
               </Form>
             </Wrapper>
           </ModuloContent>
+          <Link to="/turmas" className="new-class">
+            <Button title="Minhas turmas" background="#1C7293" />
+          </Link>
         </Content>
       </Dashboard>
     </Container>

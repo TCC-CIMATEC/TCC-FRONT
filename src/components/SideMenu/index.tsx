@@ -85,7 +85,7 @@ function SideMenu() {
               </MenuButton>
             </Link>
 
-            <Link to="/nova-turma-aluno">
+            <Link to={user.categoria === 'A' ? 'nova-turma-aluno' : 'nova-turma-professor'}>
               <MenuButton>
                 <IoIcons.IoIosPeople
                   size={26}
@@ -94,7 +94,7 @@ function SideMenu() {
               </MenuButton>
             </Link>
             
-            <Link to="/trilha">
+            <Link to="/modulos">
               <MenuButton>
                 <AiIcons.AiOutlineFlag
                   size={26}
@@ -103,7 +103,7 @@ function SideMenu() {
               </MenuButton>
             </Link>
 
-            <Link to="/trilha">
+            <Link to="/modulos">
               <MenuButton>
                 <AiIcons.AiOutlineFlag
                   size={26}
@@ -112,7 +112,7 @@ function SideMenu() {
               </MenuButton>
             </Link>
 
-            <Link to="/professor">
+            <Link to="/alterar-senha">
               <MenuButton>
                 <CgIcons.CgProfile
                   size={26}
