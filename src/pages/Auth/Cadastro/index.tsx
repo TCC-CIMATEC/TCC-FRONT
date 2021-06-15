@@ -63,7 +63,8 @@ export function Cadastro() {
                 console.log(response.data, 'resposta');
                 history.push('confirma-cadastro')
             }).catch((err) => {
-                alert(`Erro: ${err.response.data}`)
+                console.log(err.response.data.email)
+                alert(`Erro: ${err.response.data.email ? 'E-mail já cadastrado': err.response.data}`)
             })
 
     }

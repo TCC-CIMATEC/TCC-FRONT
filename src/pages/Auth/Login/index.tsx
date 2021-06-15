@@ -21,12 +21,16 @@ export function Login() {
   const { signIn } = useAuth();
   async function handleSendLogin(): Promise<void> {
     try {
-      signIn({
+      const response = await signIn({
         email,
         password,
       });
+
+      if(response === 'Credênciais inválidas'){
+        alert(response)
+      }
     } catch (err) {
-      console.log(err);
+      console.log('aaaa');
     }
   }
 

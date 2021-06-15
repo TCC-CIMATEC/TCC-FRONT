@@ -24,7 +24,7 @@ interface SignInCredentials {
 
 interface AuthContextData {
   user: User;
-  signIn(credentials: SignInCredentials): Promise<void>;
+  signIn(credentials: SignInCredentials): Promise<string>;
   signOut(): void;
 }
 
@@ -43,17 +43,23 @@ export const AuthProvider: React.FC = ({ children }) => {
   });
 
   const signIn = useCallback(async ({ email, password }) => {
-    const response = await api.post('/authenticate/token/obtain/', {
+    let result = '';
+    await api.post('/authenticate/token/obtain/', {
       email,
       password,
+    }).then((response) => {
+      const { token, user } = response.data;
+      localStorage.setItem('@TCC:token', token);
+      localStorage.setItem('@TCC:user', JSON.stringify(user));
+  
+      setData({ token, user });
+
+      result = 'Sucesso'
+    }).catch((err) => {
+      result = err = err.response.data.detail ? 'Credênciais inválidas' : 'Erro ao fazer login, tente novamente';
     });
 
-    const { token, user } = response.data;
-
-    localStorage.setItem('@TCC:token', token);
-    localStorage.setItem('@TCC:user', JSON.stringify(user));
-
-    setData({ token, user });
+    return result;
   }, []);
 
   const signOut = useCallback(() => {
