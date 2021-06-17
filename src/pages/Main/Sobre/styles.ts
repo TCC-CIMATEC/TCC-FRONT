@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const Wrapper = styled.div`
+    align-items: center;
     background-color: #ffffff60;
     border-radius: 5vh;
     display: flex;
@@ -9,7 +10,7 @@ export const Wrapper = styled.div`
     padding: 0 15vh;
     position: relative;
     img{
-        height: 100%;
+        height: 90%;
     }
 `;
 
@@ -21,23 +22,22 @@ export const Circle = styled.div`
     padding: 3vh;
     width: 18vh;
     img{
-        height: 100%;
-        width: 100%;
+        width: 0%;
     }
 `
 
 export const SobreContent = styled.div`
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     padding: 5vh 0;
     width: 100%;
     h1{
+        margin-bottom: 1vh;
         text-transform: uppercase;
     }
     p{
         line-height: 1.5rem;
-        margin-right: 3vw;
+        margin: 0.5vh 0;
         text-align: justify;
         text-indent: 2vw;
     }

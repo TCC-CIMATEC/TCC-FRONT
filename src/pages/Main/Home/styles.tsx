@@ -15,17 +15,21 @@ export const Banner = styled.div`
     display: flex;
     height: 100%;
     justify-content: space-between;
-    width: 40vw;
+    width: 80%;
 `;
 
 export const BannerContent = styled.div`
     display: flex;
     flex-direction: column;
-    height: 50%;
-    justify-content: space-between;
     padding: 5rem 0 0;
+    width: 100%;
     h1{
+        font-size: 12vh;
         text-transform: uppercase;
+    }
+    p{
+        font-size: 5vh;
+        margin: 1vh 0 10vh;
     }
 `;
 
