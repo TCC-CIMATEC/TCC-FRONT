@@ -5,7 +5,8 @@
 4. [Materiais Produzidos](#materiais-produzidos)
 5. [Como utilizar a aplicação](#como-utilizar-a-aplicação)
 6. [Árvore de Arquivos](#árvore-de-arquivos)
-6. [Instalação Front-end](#instalação-front-end)
+7. [Instalação Front-end](#instalação-front-end)
+8. [Equipe](#equipe)
 
 ## Apresentação - Dando asas para o aprendizado
 
@@ -178,3 +179,11 @@ Certifique-se de que você tem o [Yarn](https://classic.yarnpkg.com/en/docs/inst
 Para executar a aplicação em seu ambiente de desenvolvimento:
 
 Abra [http://localhost:3000](http://localhost:3000) para visualizar a aplicação em seu browser.
+
+## Equipe
+
+* [Elisete Vidotti](https://github.com/lizvidotti91)
+* [Hudson Duarte](https://github.com/huduarte)
+* [João Lucas Andrade](https://github.com/Jlucas93)
+* [Jorge Valois](https://github.com/JorgeValois)
+* [Luiz Gonzaga](https://github.com/LuizGonzaga91)
