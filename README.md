@@ -1,10 +1,11 @@
 # Code Wings
-1. [Apresentação - Dando asas para o aprendizado](#apresentacao-dando-asas-para-o-aprendizado)
+1. [Apresentação - Dando asas para o aprendizado](#apresentação-dando-asas-para-o-aprendizado)
 2. [Tecnologias Utilizadas](#tecnologias-utilizadas)
-3. [Hospedagem da aplicação](#hospedagem-da-aplicacao)
+3. [Hospedagem da aplicação](#hospedagem-da-aplicação)
 4. [Materiais Produzidos](#materiais-produzidos)
-5. [Como utilizar a aplicação](#como-utilizar-a-aplicacao)
-6. [Instalação](#instalacao)
+5. [Como utilizar a aplicação](#como-utilizar-a-aplicação)
+6. [Árvore de Arquivos](#árvore-de-arquivos)
+6. [Instalação Front-end](#instalação-front-end)
 
 ## Apresentação - Dando asas para o aprendizado
 
