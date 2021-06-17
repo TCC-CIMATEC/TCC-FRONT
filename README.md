@@ -41,7 +41,7 @@ Assim, nasce o Code Wings, uma aplicação para Web de ensino de Pensamento Comp
 
 Na página inicial, clique no botão `Começar` para ter acesso à página de Login.
 
-![Home](./scr/assets/Home.png)
+![Home](https://raw.githubusercontent.com/TCC-CIMATEC/TCC-FRONT/develop/src/assets/Home.PNG)
 
 ; 
 
