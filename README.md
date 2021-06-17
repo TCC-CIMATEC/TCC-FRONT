@@ -1,6 +1,10 @@
 # Code Wings
-
- `[TOC]`
+1. [Apresentação - Dando asas para o aprendizado](#apresentacao-dando-asas-para-o-aprendizado)
+2. [Tecnologias Utilizadas](#tecnologias-utilizadas)
+3. [Hospedagem da aplicação](#hospedagem-da-aplicacao)
+4. [Materiais Produzidos](#materiais-produzidos)
+5. [Como utilizar a aplicação](#como-utilizar-a-aplicacao)
+6. [Instalação](#instalacao)
 
 ## Apresentação - Dando asas para o aprendizado
 
@@ -160,7 +164,7 @@ O cadastro de professoras(es) segue o mesmo para alunas(os), com a diferença qu
 
 Você pode clonar esse projeto utilizando o comando em sua Linha de Comando:
 
- `git clone https://github.com/TCC-CIMATEC/TCC-FRONT.git`
+### `git clone https://github.com/TCC-CIMATEC/TCC-FRONT.git`
 
 No diretório do projeto, primeiro instale as dependências utilizando o comando:
 
