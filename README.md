@@ -41,9 +41,7 @@ Assim, nasce o Code Wings, uma aplicação para Web de ensino de Pensamento Comp
 
 Na página inicial, clique no botão `Começar` para ter acesso à página de Login.
 
-![Home](https://github.com/TCC-CIMATEC/TCC-FRONT/blob/f6132deaa154556efbe47d870923a03f88de9aaa/src/assets/Home. PNG)
-
-; 
+![Home](https://github.com/TCC-CIMATEC/TCC-FRONT/blob/f6132deaa154556efbe47d870923a03f88de9aaa/src/assets/Home.png)
 
 # Getting Started with Create React App
 
