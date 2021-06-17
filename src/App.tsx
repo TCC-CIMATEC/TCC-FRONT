@@ -1,11 +1,23 @@
-import Login from '../src/pages/Login';
+import React from 'react';
+import { BrowserRouter as Router } from 'react-router-dom';
 
-function App() {
+import Routes from './Routes/index';
+
+import {GlobalStyle} from './styles/global';
+
+import { AuthProvider } from './hooks/AuthContext';
+
+const App: React.FC = () => {
   return (
     <>
-      <Login />
+      <Router>
+        <AuthProvider>
+          <Routes />
+        </AuthProvider>
+        <GlobalStyle />
+      </Router>
     </>
   );
-}
+};
 
 export default App;
