@@ -41,7 +41,7 @@ Assim, nasce o Code Wings, uma aplicação para Web de ensino de Pensamento Comp
 
 Na página inicial, clique no botão `Começar` para ter acesso à página de Login.
 
-![Home]('src/assets/PageHome.png')
+![Home](src/assets/PageHome.png)
 
 # Getting Started with Create React App
 
