@@ -22,7 +22,7 @@ export const Circle = styled.div`
     padding: 3vh;
     width: 18vh;
     img{
-        width: 0%;
+        width: 100%;
     }
 `
 

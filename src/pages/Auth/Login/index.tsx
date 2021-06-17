@@ -26,7 +26,7 @@ export function Login() {
         password,
       });
 
-      if(response === 'Credênciais inválidas'){
+      if (response === 'Credênciais inválidas') {
         alert(response)
       }
     } catch (err) {

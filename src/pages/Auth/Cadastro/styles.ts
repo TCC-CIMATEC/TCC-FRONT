@@ -12,10 +12,10 @@ export const Radios = styled.div`
 export const RadioBox = styled.button<RadioBoxProps>`
   height: 34px;
   width: 100px;
-  border: 2px solid ${(props) => (props.isActive ? '#9EB3C2' : '#bbbbbc')};
+  border: 2px solid ${(props) => (props.isActive ? '#659157' : '#bbbbbc')};
   border-radius: 0.25rem;
 
-  background: ${(props) => (props.isActive ? '#fff' : '#f2f5f8')};
+  background: ${(props) => (props.isActive ? '#659157' : '#f2f5f8')};
 
   display: flex;
   align-items: center;
@@ -35,7 +35,7 @@ export const RadioBox = styled.button<RadioBoxProps>`
     display: inline-block;
     font-size: 18px;
     font-weight: 600;
-    color: ${(props) => (props.isActive ? '#9EB3C2' : '#bbbbbc')};
+    color: ${(props) => (props.isActive ? '#01161E' : '#bbbbbc')};
 
     transition: color 0.2s;
 
