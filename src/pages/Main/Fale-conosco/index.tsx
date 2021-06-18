@@ -28,10 +28,8 @@ function FaleConosco() {
                         </p>
                     </Row>
                     <Row>
-                        <p className="flex">
-                            <Button title="Cancelar" background="#D7263D" />
-                            <Button title="Enviar" background="#659157" />
-                        </p>
+                        <Button title="Cancelar" background="#D7263D" />
+                        <Button title="Enviar" background="#659157" />
                     </Row>
                 </Form>
             </Wrapper>

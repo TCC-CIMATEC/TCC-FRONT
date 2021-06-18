@@ -39,7 +39,7 @@ export function Login() {
       <Wrapper>
         <Form onSubmit={e => e.preventDefault()}>
           <Circle>
-            <img src={LogoImg} alt="Logo Code Wings" />
+            <img className="Logo" src={LogoImg} alt="Logo Code Wings" />
           </Circle>
           <h1>Entrar!</h1>
           <Row>

@@ -3,16 +3,17 @@ import styled from 'styled-components';
 export const Container = styled.div`
     align-items : center;
     justify-content: center;
-    height: 85vh;
+    min-height: 85vh;
     display : flex;
     flex-direction: column;
     .btn-content{
-        margin-top: 4vh;
+        margin: 4vh 0 2vh;
     }
 `;
 
 export const Contexto = styled.div`
     border-radius: 8px;
+    margin-top: 2vh;
 `;
 
 export const Title = styled.h1`

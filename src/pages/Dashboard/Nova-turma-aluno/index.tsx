@@ -9,12 +9,12 @@ import api from '../../../services/api';
 import { Link, useHistory } from 'react-router-dom';
 
 export function NovaTurmaAluno() {
-  const {user} = useAuth();
+  const { user } = useAuth();
   const history = useHistory();
   const [classCode, setClassCode] = useState<string>();
 
-  async function handleSubmit(){
-    if(!classCode){
+  async function handleSubmit() {
+    if (!classCode) {
       alert('Preencha o campo como código da turma.');
       return;
     }
@@ -25,11 +25,11 @@ export function NovaTurmaAluno() {
     }
 
     await api.put('turma/add-alunos/', newStudent)
-    .then((response) => {
-      history.push('aluno')
-    }).catch((err) => {
+      .then((response) => {
+        history.push('aluno')
+      }).catch((err) => {
         alert(err.response.data.user[0])
-    })
+      })
 
   }
 
@@ -43,21 +43,21 @@ export function NovaTurmaAluno() {
                 <h1>Nova Turma</h1>
                 <Row>
                   <p>
-                    <input 
-                      type="text" 
-                      name="form-codigo" 
-                      id="form-codigo" 
-                      placeholder="Código da Turma" 
-                      onChange={(e) => setClassCode(e.currentTarget.value)} 
+                    <input
+                      type="text"
+                      name="form-codigo"
+                      id="form-codigo"
+                      placeholder="Código da Turma"
+                      onChange={(e) => setClassCode(e.currentTarget.value)}
                     />
                   </p>
                 </Row>
                 <Row>
-                    <Button 
-                      title="Entrar" 
-                      background="#659157" 
-                      onClick={() => handleSubmit()}  
-                    />
+                  <Button
+                    title="Entrar"
+                    background="#659157"
+                    onClick={() => handleSubmit()}
+                  />
                 </Row>
               </Form>
             </Wrapper>

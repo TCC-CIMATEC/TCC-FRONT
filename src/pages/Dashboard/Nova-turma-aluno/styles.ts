@@ -25,6 +25,7 @@ export const ModuloContent = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  margin-bottom: 5vh;
   width: 50%;
 `;
 

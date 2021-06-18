@@ -40,7 +40,7 @@ function TrilhaInicial() {
   const [content, setContent] = useState<ContentParams>({} as ContentParams)
 
   useEffect(() => {
-    async function loadContent(){
+    async function loadContent() {
       const response = await api.get(`conteudo/?id=${state}`)
       setContent(response.data[0]);
       setIsLoading(false);
@@ -53,23 +53,23 @@ function TrilhaInicial() {
         <p>Carregando conteúdo</p>
       ) : (
         <>
-        <Contexto>
-          <Title>{content.titulo}</Title>
-        </Contexto>
+          <Contexto>
+            <Title>{content.titulo}</Title>
+          </Contexto>
 
-        <Image src={`${content.url_img}`} />
+          <Image src={`${content.url_img}`} />
 
-        <div className="btn-content">
-          <Link
-            to={{
-              pathname: 'exercicio',
-              state: content.questao
-            }}
-          >
-            <Button title="Próximo" background="#659157" />
-          </Link>
-        </div>
-      </>
+          <div className="btn-content">
+            <Link
+              to={{
+                pathname: 'exercicio',
+                state: content.questao
+              }}
+            >
+              <Button title="Próximo" background="#659157" />
+            </Link>
+          </div>
+        </>
       )}
     </Container>
   );

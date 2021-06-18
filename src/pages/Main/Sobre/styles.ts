@@ -5,12 +5,12 @@ export const Wrapper = styled.div`
     background-color: #ffffff60;
     border-radius: 5vh;
     display: flex;
-    height: 90%;
+    min-height: 90%;
     justify-content: center;
     padding: 0 15vh;
     position: relative;
     img{
-        height: 90%;
+        height: 60vh;
     }
 `;
 
@@ -21,7 +21,8 @@ export const Circle = styled.div`
     margin: 0 auto;
     padding: 3vh;
     width: 18vh;
-    img{
+    img.Logo{
+        height: auto;
         width: 100%;
     }
 `
@@ -29,7 +30,8 @@ export const Circle = styled.div`
 export const SobreContent = styled.div`
     display: flex;
     flex-direction: column;
-    padding: 5vh 0;
+    height: 75vh;
+    padding: 5vh 4vh 5vh 0;
     width: 100%;
     h1{
         margin-bottom: 1vh;
