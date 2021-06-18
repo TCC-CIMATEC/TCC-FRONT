@@ -73,6 +73,10 @@ Assim, nasce o Code Wings, uma aplicação para Web de ensino de Pensamento Comp
 
  `Na página inicial, você tem acesso a todo o conteúdo da nossa aplicação. Ao clicar em sua posição no ranking, você pode ver quem são os jogadores com até as cinco melhores posições, e sua colocação em relação a eles. Atenção! Em caso de empate, usamos o critério do jogador mais antigo como o primeiro lugar. No menu Turmas, você pode ingressar em uma nova turma, adicionando o código passado por sua(seu) professor(a), cadastrado na plataforma. Você também pode clicar em uma das trilhas disponíveis, que são Pensamento Computacional ou Lógica de Programação, e iniciar seus estudos! Em perfil, é permitido que você troque sua senha.`
 
+![Página Ranking](src/assets/PageRanking.png)
+
+ `Ao clicar em sua colocação, você será direcionado para o ranking geral.`
+
  Regras do jogo:
  - A cada resposta correta o(a) jogador(a) ganha 10 pontos; 
  - A cada resposta errada nada será contabilizado na pontuação e ele(a) poderá tentar novamente; 
@@ -88,11 +92,21 @@ Assim, nasce o Code Wings, uma aplicação para Web de ensino de Pensamento Comp
 
  `Ao clicar em Minhas Turmas, na página de Turmas, o(a) jogador(a) pode visualizar todas as turmas em que está participando. Para a segunda versão, será incluída a funcionalidade de exclusão de uma turma apenas pela(o) professora(or). Assim, pode-se ter uma melhor visão do desempenho dos alunos, sem que os dados sejam perdidos, em caso de a(o) aluna(o) sair da turma sem o consentimento da(o) professora(or).`
 
-![Exemplo página conteúdo](src/assets/PageListClass.png)
+![Módulos Pensamento Computacional](src/assets/PagePC.png)
 
-![Exemplo página exercício](src/assets/PageListClass.png)
+ `Ao clicar no cartão Pensamento Computacional, você será redirecionado à trilha de Pensamento Computacional, com o módulo inicial`
+
+![Módulos Lógica de Programação](src/assets/PageLP.png)
+
+ `Ao clicar no cartão Lógica de Programação, você será redirecionado à trilha de Lógica de Programação, com os módulos de estudo. Para o ensino de Lógica de Programação, optamos por, nesse momento, aplicar pseudocódigo, ao invés de uma linguagem de programação específica.`
+
+![Exemplo página conteúdo](src/assets/PageContent.png)
 
  `Ao iniciar um módulo da trilha, o aprendizado é dividido da seguinte maneira: uma página de conteúdo e uma questão sobre aquele conteúdo passado. Desta forma, a(o) aluna(o) consegue absorver o conteúdo aos poucos e de forma mais eficiente do que se fosse passado um conteúdo extenso e depois uma lista de exercícios. Com a próxima versão, podemos também incluir uma lista maior de exercícios com a revisão de mais de um conteúdo.`
+
+![Exemplo página exercício](src/assets/PageExercise.png)
+
+ `Ao clicar em uma das opções, você será direcionado para a página de acerto ou erro. Ao acertar uma questão, você ganhará 10 pontos e subirá um nível.`
 
 ![Perfil](src/assets/PageProfile.png)
 

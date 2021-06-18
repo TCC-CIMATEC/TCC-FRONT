@@ -10,7 +10,7 @@ function EsqueciSenha() {
             <Wrapper>
                 <Form>
                     <Circle>
-                        <img src={LogoImg} alt="Logo Code Wings" />
+                        <img className="Logo" src={LogoImg} alt="Logo Code Wings" />
                     </Circle>
                     <h1>Esqueceu sua senha?</h1>
                     <Row>

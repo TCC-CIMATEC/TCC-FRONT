@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const Container = styled.div`
     align-items : center;
     justify-content: center;
-    height: 100vh;
+    min-height: 100vh;
     display : flex;
     flex-direction: column;
     .btn-content{
@@ -21,6 +21,7 @@ export const Contexto = styled.div`
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    width: 80%;
 `;
 
 export const Title = styled.h1`
@@ -53,6 +54,7 @@ export const Image = styled.img`
 display: flex;
 justify-content: center;
 align-items: center;
+margin: 3vh 0 2vh;
 `;
 
 export const Light = styled.div`
@@ -84,6 +86,7 @@ export const Questions = styled.ul`
     grid-template-columns: 50% 50%;
     list-style-type: none;
     margin: 2vh 0;
+    width: 80%;
     li{
         border-radius: 10px;
         box-shadow: 2px 2px 10px #00000060;
@@ -113,7 +116,7 @@ export const Questions = styled.ul`
             color: #ffffff;
             font-weight: 100;
             display: flex;
-            justify-content: space-around;
+            justify-content: flex-start;
             &:hover{
                 color: #ffffff;
             }

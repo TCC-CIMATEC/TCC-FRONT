@@ -10,7 +10,7 @@ import { useHistory } from "react-router-dom";
 function ErrouQuestao() {
     const history = useHistory();
     function handleSubmit(){
-        history.push('modulos')
+        history.push('aluno')
     }
     return (
         <Container>

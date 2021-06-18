@@ -64,7 +64,7 @@ export function Cadastro() {
                 history.push('confirma-cadastro')
             }).catch((err) => {
                 console.log(err.response.data.email)
-                alert(`Erro: ${err.response.data.email ? 'E-mail já cadastrado': err.response.data}`)
+                alert(`Erro: ${err.response.data.email ? 'E-mail já cadastrado' : err.response.data}`)
             })
 
     }
@@ -75,7 +75,7 @@ export function Cadastro() {
             <Wrapper style={{ height: "auto" }}>
                 <Form onSubmit={e => e.preventDefault()}>
                     <Circle>
-                        <img src={LogoImg} alt="Logo Code Wings" />
+                        <img className="Logo" src={LogoImg} alt="Logo Code Wings" />
                     </Circle>
                     <h1>Cadastre-se!</h1>
                     <Row>
