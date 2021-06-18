@@ -12,10 +12,20 @@ export function Aluno() {
         <Content className="content-aluno">
           <h1>Trilhas de estudo</h1>
           <AlunoContent>
-            <Link to="/modulos">
+            <Link 
+              to={{
+                pathname: '/modulos',
+                state: 'P'
+              }}     
+            >
               <CardVertical img={LogoImg} title={"Pensamento computacional"} description={"Aprenda sobre os quatro pilares do Pensamento Computacional, de Jeannete Wing"} />
             </Link>
-            <Link to="/modulos">
+            <Link 
+              to={{
+                pathname: '/modulos',
+                state: 'L'
+              }}              
+            >
               <CardVertical img={LogoImg} title={"Lógica de programação"} description={"Aprenda sobre os quatro pilares do Pensamento Computacional, de Jeannete Wing"} />
             </Link>
           </AlunoContent>

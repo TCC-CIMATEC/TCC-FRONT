@@ -96,7 +96,12 @@ function SideMenu() {
               </MenuButton>
             </Link>
             
-            <Link to="/modulos">
+            <Link 
+              to={{
+                pathname: '/modulos',
+                state: 'P'
+              }}   
+            >
               <MenuButton>
                 <AiIcons.AiOutlineFlag
                   size={26}
@@ -105,7 +110,12 @@ function SideMenu() {
               </MenuButton>
             </Link>
 
-            <Link to="/modulos">
+            <Link 
+              to={{
+                pathname: '/modulos',
+                state: 'L'
+              }}   
+            >
               <MenuButton>
                 <AiIcons.AiOutlineFlag
                   size={26}

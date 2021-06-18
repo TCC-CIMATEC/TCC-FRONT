@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  background-color: #9EB3C2;
+  background-color: #fff;
   border: none;
   width: 100%;
 
@@ -24,7 +24,7 @@ export const SelectBox = styled.select`
 
   color: #000;
   border: none;
-  background-color: #9EB3C2;
+  background-color: #fff;
 
   cursor: pointer;
 

@@ -42,8 +42,7 @@ export const Url = styled.a`
 `;
 
 export const Image = styled.img`
-    height : 60%;
-    width: 40%;
+margin-top: 50px;
 `;
 
 export const Light = styled.div`

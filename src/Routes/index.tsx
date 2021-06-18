@@ -44,7 +44,7 @@ export default function Routes() {
                 <Route path="/errou-questao" exact component={ErrouQuestao} isPrivate />
                 <Route path="/exercicio" exact component={Exercicio} isPrivate />
                 <Route path="/aluno" exact component={Aluno} isPrivate />
-                <Route path="/modulos" exact component={Modulos} isPrivate />
+                <Route path="/modulos/" exact component={Modulos} isPrivate />
                 <Route path="/ranking-aluno" exact component={RankingAlunos} isPrivate />
                 <Route path="/nova-turma-aluno" exact component={NovaTurmaAluno} isPrivate />
                 <Route path="/turmas" exact component={Turmas} isPrivate />
