@@ -34,8 +34,7 @@ Assim, nasce o Code Wings, uma aplicação para Web de ensino de Pensamento Comp
 
 ## Hospedagem da aplicação
 
-* [Heroku](https://www.heroku.com/) no Back-end; 
-* [Vercel](https://vercel.com/) no Front-end.
+* [Heroku](https://www.heroku.com/) no Back-end;
 
 ## Materiais Produzidos
 
