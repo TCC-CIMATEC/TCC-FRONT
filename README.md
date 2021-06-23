@@ -22,7 +22,7 @@ E, dessa forma, nosso projeto tem como objetivo proporcionar uma ferramenta lúd
 * Trabalhar habilidades de Pensamento Computacional, que são pouco desenvolvidas nos cursos da área de Computação e ensino básico; 
 * Capacitar os aprendizes nas habilidades de Pensamento Computacional e Lógica de Programação.
 
-Assim, nasce o Code Wings, uma aplicação para Web de ensino de Pensamento Computacional e Lògica de Programação, voltada para: docentes na área de Ciências da Computação; estudantes e entusistas da área de Ciências da Computação. O nome do projeto é uma homenagem a Jeannette Wing, diretora e professora de Ciências da Computação da Universidade de Columbia, que trouxe o conceito de Pensamento Computacional, em 2006.
+Assim, nasce o Code Wings, uma aplicação para Web de ensino de Pensamento Computacional e Lógica de Programação, voltada para: docentes na área de Ciências da Computação; estudantes e entusistas da área de Ciências da Computação. O nome do projeto é uma homenagem a Jeannette Wing, diretora e professora de Ciências da Computação da Universidade de Columbia, que trouxe o conceito de Pensamento Computacional, em 2006.
 
 ## Tecnologias Utilizadas
 
@@ -46,19 +46,19 @@ Assim, nasce o Code Wings, uma aplicação para Web de ensino de Pensamento Comp
 
 ## Como utilizar a aplicação
 
-### Para alunas(os)
+### Para alunos(as)
 
 ![Home](src/assets/PageHome.png)
 
- `Nossa aplicação está disponível [neste link](COLOCAR O LINK FINAL AQUI). Na página inicial, clique no botão Começar para ter acesso à página de Login.`
+ `Na página inicial, clique no botão Começar para ter acesso à página de Login.`
 
 ![Login](src/assets/PageLogin.png)
 
- `Aqui você pode digitar seu email e senha e confirmar para ser direcionada(o) para seu espaço de aprendizado. Como ainda não temos cadastro na aplicação, vamos clicar em Cadastre-se e criar uma nova conta.`
+ `Aqui você pode digitar seu email e senha e confirmar para ser direcionado(a) para seu espaço de aprendizado. Como ainda não temos cadastro na aplicação, vamos clicar em Cadastre-se e criar uma nova conta.`
 
 ![Cadastro](src/assets/PageRegister.png)
 
- `Preencha os campos corretamente e clique em Cadastrar. Atenção ao preenchimento de todos os campos e em seu email cadastrado: não é permitido que sejam criadas duas contas com o mesmo email. Ao preencher o número do telefone, certifique-se de usar apenas números. E, caso deseje preencher seu cadastro como professor, não esqueça de marcar a opção correta.`
+ `Preencha os campos corretamente e clique em Cadastrar. Atenção ao preenchimento de todos os campos e em seu email cadastrado: não é permitido que sejam criadas duas contas com o mesmo email. Ao preencher o número do telefone, certifique-se de usar apenas números. E, caso deseje preencher seu cadastro como professor(a), não esqueça de marcar a opção correta.`
 
 ![Cadastro criado com sucesso](src/assets/PageCreatedRegister.png)
 
@@ -70,38 +70,38 @@ Assim, nasce o Code Wings, uma aplicação para Web de ensino de Pensamento Comp
 
 ![Página inicial jogador](src/assets/PageLogged.png)
 
- `Na página inicial, você tem acesso a todo o conteúdo da nossa aplicação. Ao clicar em sua posição no ranking, você pode ver quem são os jogadores com até as cinco melhores posições, e sua colocação em relação a eles. Atenção! Em caso de empate, usamos o critério do jogador mais antigo como o primeiro lugar. No menu Turmas, você pode ingressar em uma nova turma, adicionando o código passado por sua(seu) professor(a), cadastrado na plataforma. Você também pode clicar em uma das trilhas disponíveis, que são Pensamento Computacional ou Lógica de Programação, e iniciar seus estudos! Em perfil, é permitido que você troque sua senha.`
+ `Na página inicial, você tem acesso a todo o conteúdo da nossa aplicação. Ao clicar em sua posição no ranking, você pode ver quem são os(as) jogadores(as) com até as cinco melhores posições, e sua colocação em relação a eles(as). Atenção! Em caso de empate, usamos o critério do(a) jogador(a) mais antigo(a) como o primeiro lugar. No menu Turmas, você pode ingressar em uma nova turma, adicionando o código passado por seu(sua) professor(a), cadastrado na plataforma. Você também pode clicar em uma das trilhas disponíveis, que são Pensamento Computacional ou Lógica de Programação, e iniciar seus estudos! Em perfil, é permitido que você troque sua senha.`
 
 ![Página Ranking](src/assets/PageRanking.png)
 
- `Ao clicar em sua colocação, você será direcionado para o ranking geral.`
+ `Ao clicar em sua colocação, você será direcionado(a) para o ranking geral.`
 
  Regras do jogo:
  - A cada resposta correta o(a) jogador(a) ganha 10 pontos; 
  - A cada resposta errada nada será contabilizado na pontuação e ele(a) poderá tentar novamente; 
- - Para avançar para um segundo módulo, é necessário que ele acerte a todas as questões do módulo anterior; 
+ - Para avançar para um segundo módulo, é necessário que ele(a) acerte a todas as questões do módulo anterior; 
  - É permitido ao(a) jogador(a) revisar um módulo já finalizado, mas as questões respondidas novamente não contarão mais pontos; 
  - Não é permitido pular módulos. Eles ficam bloqueados até que o(a) jogador(a) finalize o módulo anterior.
 
 ![Adicionar nova turma](src/assets/PageAddClass.png)
 
- `Para participar de uma turma, é necessário que o(a) jogador(a) digite o código da turma enviado pela(o) professora(or).`
+ `Para participar de uma turma, é necessário que o(a) jogador(a) digite o código da turma enviado pelo(a) professor(a).`
 
 ![Turmas do aluno](src/assets/PageListClass.png)
 
- `Ao clicar em Minhas Turmas, na página de Turmas, o(a) jogador(a) pode visualizar todas as turmas em que está participando. Para a segunda versão, será incluída a funcionalidade de exclusão de uma turma apenas pela(o) professora(or). Assim, pode-se ter uma melhor visão do desempenho dos alunos, sem que os dados sejam perdidos, em caso de a(o) aluna(o) sair da turma sem o consentimento da(o) professora(or).`
+ `Ao clicar em Minhas Turmas, na página de Turmas, o(a) jogador(a) pode visualizar todas as turmas em que está participando. Para a segunda versão, será incluída a funcionalidade de exclusão de uma turma apenas pelo(a) professor(a). Assim, pode-se ter uma melhor visão do desempenho dos estudantes, sem que os dados sejam perdidos, em caso de um(a) estudante sair da turma sem o consentimento do(a) professor(a).`
 
 ![Módulos Pensamento Computacional](src/assets/PagePC.png)
 
- `Ao clicar no cartão Pensamento Computacional, você será redirecionado à trilha de Pensamento Computacional, com o módulo inicial`
+ `Ao clicar no cartão Pensamento Computacional, você será redirecionado(a) à trilha de Pensamento Computacional, com o módulo inicial`
 
 ![Módulos Lógica de Programação](src/assets/PageLP.png)
 
- `Ao clicar no cartão Lógica de Programação, você será redirecionado à trilha de Lógica de Programação, com os módulos de estudo. Para o ensino de Lógica de Programação, optamos por, nesse momento, aplicar pseudocódigo, ao invés de uma linguagem de programação específica.`
+ `Ao clicar no cartão Lógica de Programação, você será redirecionado(a) à trilha de Lógica de Programação, com os módulos de estudo. Para o ensino de Lógica de Programação, optamos por, nesse momento, aplicar pseudocódigo, ao invés de uma linguagem de programação específica.`
 
 ![Exemplo página conteúdo](src/assets/PageContent.png)
 
- `Ao iniciar um módulo da trilha, o aprendizado é dividido da seguinte maneira: uma página de conteúdo e uma questão sobre aquele conteúdo passado. Desta forma, a(o) aluna(o) consegue absorver o conteúdo aos poucos e de forma mais eficiente do que se fosse passado um conteúdo extenso e depois uma lista de exercícios. Com a próxima versão, podemos também incluir uma lista maior de exercícios com a revisão de mais de um conteúdo.`
+ `Ao iniciar um módulo da trilha, o aprendizado é dividido da seguinte maneira: uma página de conteúdo e uma questão sobre aquele conteúdo passado. Desta forma, o(a) aluno(a) consegue absorver o conteúdo aos poucos e de forma mais eficiente do que se fosse passado um conteúdo extenso e depois uma lista de exercícios. Com a próxima versão, podemos também incluir uma lista maior de exercícios com a revisão de mais de um conteúdo.`
 
 ![Exemplo página exercício](src/assets/PageExercise.png)
 
@@ -113,13 +113,13 @@ Assim, nasce o Code Wings, uma aplicação para Web de ensino de Pensamento Comp
 
 ### Para Professoras(es)
 
-O cadastro de professoras(es) segue o mesmo para alunas(os), com a diferença que deve-se marcar a opção `Professor` . A página inicial é parecida com a do aluno, exceto que as turmas criadas são exibidas em sua página inicial, com título e senha. Caso o professor não possua turmas criadas, é exibida uma mensagem de aviso. Em uma nova versão, será incluída a função de excluir turmas.
+O cadastro de professores(as) segue o mesmo para estudantes, com a diferença que deve-se marcar a opção `Professor` . A página inicial é parecida com a do(a) estudante, exceto que as turmas criadas são exibidas em sua página inicial, com título e senha. Caso o(a) professor(a) não possua turmas criadas, é exibida uma mensagem de aviso. Em uma nova versão, será incluída a função de excluir turmas.
 
 ![Professor](src/assets/PageTeacher.png)
 
 ![Criar nova turma](src/assets/PageNewClass.png)
 
- `Basta preencher os campos corretamente e criar uma senha para compartilhar com seus alunos!`
+ `Basta preencher os campos corretamente e criar uma senha para compartilhar com seus(uas) alunos(as)!`
 
 ## Árvore de Arquivos
 
